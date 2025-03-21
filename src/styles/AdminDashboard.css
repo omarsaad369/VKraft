@@ -1,0 +1,242 @@
+/* حاوية الصفحة */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+  width: 100%;
+}
+
+/* الشريط الجانبي */
+.admin-sidebar {
+  display: inline-block;
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 30%;
+}
+
+/* تحسين مظهر العنوان في الشريط الجانبي */
+.admin-sidebar h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص أكثر وضوحًا */
+  margin-bottom: 40px; /* زيادة المسافة السفلية */
+  text-transform: uppercase; /* جعل النص كبيرًا */
+  letter-spacing: 1px; /* إضافة مسافة بين الحروف */
+}
+
+/* قائمة الروابط في الشريط الجانبي */
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* كل عنصر في القائمة */
+.admin-sidebar li {
+  margin-bottom: 25px; /* زيادة المسافة بين العناصر */
+  transition: margin-bottom 0.3s; /* إضافة تأثير عند تغيير المسافة */
+}
+
+.admin-sidebar li:hover {
+  margin-bottom: 30px; /* إضافة تأثير لتكبير المسافة عند التمرير */
+}
+
+/* الروابط في الشريط الجانبي */
+.admin-sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* زيادة حجم النص */
+  padding: 10px 15px; /* إضافة حشو داخلي حول النص */
+  border-radius: 5px; /* جعل الحواف مدورة */
+  transition: all 0.3s ease; /* إضافة تأثيرات سلسة عند التمرير */
+  background-color: rgba(255, 255, 255, 0.1); /* إضافة خلفية خفيفة */
+}
+
+/* تأثير التمرير على الروابط */
+.admin-sidebar a:hover {
+  color: #007bff; /* تغيير اللون عند التمرير */
+  background-color: rgba(0, 123, 255, 0.2); /* تغيير الخلفية عند التمرير */
+}
+
+/* تحسين الأيقونات في الروابط */
+.admin-sidebar a svg {
+  margin-right: 15px; /* زيادة المسافة بين الأيقونة والنص */
+  font-size: 20px; /* زيادة حجم الأيقونات */
+}
+
+/* تحسين تصميم العناصر عند التمرير */
+.admin-sidebar a:focus {
+  outline: none; /* إزالة تأثير التحديد الافتراضي */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* إضافة تأثير الظل عند التحديد */
+}
+
+/* إضافة تأثير عند التمرير على الرابط الأخير */
+.admin-sidebar li:last-child a {
+  background-color: #28a745; /* إضافة خلفية خضراء للزر الأخير */
+  color: white; /* النص يكون باللون الأبيض */
+}
+
+.admin-sidebar li:last-child a:hover {
+  background-color: #218838; /* تغيير اللون عند التمرير */
+  color: #fff; /* الحفاظ على اللون الأبيض عند التمرير */
+}
+
+/* التأثير على العنصر الأول فقط (حيث يمكن إضافة المزيد من التحسينات) */
+.admin-sidebar li:first-child a {
+  background-color: #007bff; /* لون مميز للعناصر الأولى */
+}
+
+/* إضافة تأثير التمرير على الروابط */
+.admin-sidebar li:first-child a:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* استجابة لتصميم الهواتف المحمولة */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 20px;
+  }
+
+  .admin-sidebar h2 {
+    font-size: 20px;
+  }
+
+  .admin-sidebar a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .admin-sidebar a svg {
+    margin-right: 12px;
+  }
+}
+
+/* المحتوى الرئيسي */
+.admin-main {
+  margin-left: 250px; /* تعديل المسافة لتجنب الشريط الجانبي */
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 70%;
+}
+
+.admin-main h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* أسطوانات الإحصائيات */
+.admin-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.stat-box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.stat-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stat-box strong {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* الأقسام الرئيسية */
+.admin-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-box {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  width: 48%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-box li {
+  margin-bottom: 10px;
+}
+
+.section-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.section-box a:hover {
+  text-decoration: underline;
+}
+
+/* استجابة لتصميم الهواتف المحمولة */
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+
+  .admin-main {
+    margin-left: 0;
+  }
+
+  .admin-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-box {
+    width: 100%;
+  }
+
+  .admin-sections {
+    flex-direction: column;
+  }
+
+  .section-box {
+    width: 100%;
+  }
+}
