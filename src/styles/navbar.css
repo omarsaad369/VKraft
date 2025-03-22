@@ -86,7 +86,6 @@ body {
 
 .search-btn:hover {
   transform: scale(1.2);
-  background-color: #ff4500;
 }
 
 /* ✅ تصميم قائمة نتائج البحث */
@@ -329,60 +328,6 @@ body {
   align-items: center;
 }
 
-/* ✅ تحسين القائمة المنسدلة للأقسام */
-.dropdown {
-  position: relative;
-  cursor: pointer;
-}
-
-.dropdown span {
-  font-weight: bold;
-  color: white;
-  padding: 10px;
-  transition: color 0.3s ease;
-}
-
-.dropdown span:hover {
-  color: #ffeb3b;
-}
-
-/* قائمة الروابط المنسدلة */
-.dropdown-menu {
-  display: none; /* إخفاء القائمة بشكل افتراضي */
-  position: absolute;
-  background-color: white;
-  color: black;
-  top: 100%; /* تحديد المسافة من أعلى العنصر الأب */
-  left: 0;
-  width: 220px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 0; /* إخفاء القائمة عبر تغيير الشفافية */
-  transform: translateY(-10px); /* تحريك القائمة إلى الأعلى قليلاً */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* تأثير الانتقال السلس */
-  list-style: none;
-  padding: 10px;
-}
-
-/* عندما يتم تفعيل القائمة (عند التمرير) */
-.dropdown-menu.show {
-  display: block; /* جعل القائمة مرئية */
-  opacity: 1; /* جعل القائمة بالكامل مرئية */
-  transform: translateY(0); /* إرجاع القائمة إلى مكانها الطبيعي */
-}
-
-/* تحسين تأثير العناصر داخل القائمة المنسدلة عند التمرير */
-.dropdown-menu li {
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-menu li:hover {
-  background-color: #ff6600; /* تغيير الخلفية عند التمرير */
-  color: white; /* تغيير اللون عند التمرير */
-}
-
 /* ✅ تحسين القائمة للأجهزة الصغيرة */
 @media (max-width: 768px) {
   .hamburger {
@@ -396,7 +341,7 @@ body {
     top: 70px;
     left: 0;
     width: 100%;
-    background: #ff6600;
+    background: #c52b2b;
     padding: 10px 0;
     transition: all 0.3s ease-in-out;
   }
@@ -424,39 +369,11 @@ body {
   gap: 20px;
 }
 
-/* ✅ تحسين زر القائمة (☰) */
-.hamburger-menu {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 8px 12px;
-  background: white;
-  color: #ff6600;
-  border-radius: 8px;
-  transition: background 0.3s ease, color 0.3s ease;
-  position: relative;
-}
-
 /* ✅ تحسين أيقونة القائمة */
 .menu-icon {
   font-size: 22px;
   margin-right: 8px;
   transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.hamburger-menu:hover {
-  background: #ff5722;
-  color: white;
-  transform: scale(1.05);
-  border-color: white;
-}
-
-.hamburger-menu:hover .menu-icon {
-  transform: rotate(90deg);
-  color: white;
 }
 
 /* تنسيق قائمة لوحة التحكم */
@@ -509,3 +426,89 @@ body {
 .admin-link:hover {
   background-color: #ddd;
 }
+
+
+.hamburger-menu:hover {
+  background: #ff5722;
+  color: white;
+  transform: scale(1.05);
+  border-color: white;
+}
+
+.hamburger-menu:hover .menu-icon {
+  transform: rotate(90deg);
+  color: white;
+}
+
+
+/* ✅ تحسين زر القائمة (☰) */
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 12px;
+  background: white;
+  color: #ff6600;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+/* قائمة الروابط المنسدلة */
+.dropdown-menu {
+  display: none; /* إخفاء القائمة بشكل افتراضي */
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 100%; /* تحديد المسافة من أعلى العنصر الأب */
+  left: 0;
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* إخفاء القائمة عبر تغيير الشفافية */
+  transform: translateY(-10px); /* تحريك القائمة إلى الأعلى قليلاً */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* تأثير الانتقال السلس */
+  list-style: none;
+  padding: 10px;
+}
+
+/* عندما يتم تفعيل القائمة (عند التمرير) */
+.dropdown-menu.show {
+  display: block; /* جعل القائمة مرئية */
+  opacity: 1; /* جعل القائمة بالكامل مرئية */
+  transform: translateY(0); /* إرجاع القائمة إلى مكانها الطبيعي */
+}
+
+/* تحسين تأثير العناصر داخل القائمة المنسدلة عند التمرير */
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ff6600; /* تغيير الخلفية عند التمرير */
+  color: white; /* تغيير اللون عند التمرير */
+}
+
+
+/* ✅ تحسين القائمة المنسدلة للأقسام */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown span {
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.dropdown span:hover {
+  color: #ffeb3b;
+}
+

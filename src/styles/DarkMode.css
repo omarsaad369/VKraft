@@ -12,31 +12,31 @@ body.dark-mode {
     filter: brightness(0.8); /* تقليل سطوع الشعار في الوضع الليلي */
   }
   
-  .search-container {
+  .search-container.dark-mode {
     background: #333; /* خلفية داكنة لمربع البحث */
     border-color: #444; /* حدود داكنة */
   }
   
-  .search-input {
+  .search-input.dark-mode{
     color: #fff; /* نص أبيض في مربع البحث */
     background: #444; /* خلفية داكنة في مربع البحث */
   }
   
-  .search-btn {
+  .search-btn.dark-mode {
     background: #ff6600; /* زر البحث باللون البرتقالي */
   }
   
   /* إضافة تأثيرات عند التمرير */
-  .search-btn:hover {
+  .search-btn:hover.dark-mode {
     background-color: #ff4500; /* تغيير اللون عند التمرير */
   }
   
   /* تنسيق الروابط عند التمرير */
-  .nav-menu a:hover {
+  .nav-menu a:hover.dark-mode {
     color: #ff6600; /* لون النص عند التمرير */
   }
   
-  .cart-icon {
+  .cart-icon.dark-mode {
     background: #444; /* خلفية داكنة لأيقونة السلة */
     color: #fff; /* نص أبيض */
   }
@@ -54,16 +54,16 @@ body.dark-mode {
   }
   
   /* تخصيص الخلفية في الوضع الليلي */
-  .dark-mode .search-container {
+  .search-container.dark-mode {
     background: #333; /* خلفية داكنة لمربع البحث في الوضع الليلي */
   }
   
-  .dark-mode .search-btn {
+  .search-btn.dark-mode {
     background-color: #ff4500; /* تغيير اللون في الوضع الليلي */
   }
   
   /* 🌟 الوضع الليلي */
-body.dark-mode {
+  body.dark-mode {
     background-color: #121212; /* خلفية داكنة للموقع */
     color: #f9f9f9; /* نص أبيض في الوضع الليلي */
   }

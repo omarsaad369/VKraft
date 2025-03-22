@@ -76,54 +76,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-    {/* قائمة الهامبورغر */}
-      <div className="hamburger-menu" onClick={() => setDropdownOpen(!dropdownOpen)}>
-        <FaBars className="menu-icon" /> <span>Categories</span>
-        <span onClick={() => setDropdownOpen(!dropdownOpen)} className="dropdown-toggle">
-          
-        </span>
-        <ul ref={menuRef} className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-          {/* روابط الأقسام */}
-          <Link to="/3d-printing" className="admin-link1" onClick={() => handleLinkClick('/3d-printing')}>
-            🖨️ 3D Printing
-          </Link>
-          <Link to="/dtf-clothing" className="admin-link1" onClick={() => handleLinkClick('/dtf-clothing')}>
-            👕 DTF Printing
-          </Link>
-          <Link to="/accessories" className="admin-link1" onClick={() => handleLinkClick('/accessories')}>
-            🎁 Accessories Printing
-          </Link>
-
-          {/* روابط لوحة التحكم فقط إذا كان المستخدم مدير */}
-          {user && user.email === "omarsaad01007342123@gmail.com" && (
-            <div className="admin-dropdown">
-              <Link to="/admin" className="admin-link" onClick={() => setDropdownOpen(false)}>
-                🏠 Dashboard
-              </Link>
-              <Link to="/admin/products" className="admin-link" onClick={() => setDropdownOpen(false)}>
-                📦 Manage Products
-              </Link>
-              <Link to="/admin/orders" className="admin-link" onClick={() => setDropdownOpen(false)}>
-                📑 Manage Orders
-              </Link>
-              <Link to="/admin/users" className="admin-link" onClick={() => setDropdownOpen(false)}>
-                👥 Manage Users
-              </Link>
-              <Link to="/admin/settings" className="admin-link" onClick={() => setDropdownOpen(false)}>
-                ⚙️ Settings
-              </Link>
-            </div>
-          )}
-
-          {/* زر التبديل بين الوضعين داخل القائمة */}
-          <li>
-            <button onClick={toggleDarkMode} className="dark-mode-toggle">
-              {darkMode ? <FaSun /> : <FaMoon />}
-              {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            </button>
-          </li>
-          </ul>
-        </div>
+    
 
     
       {/* الشعار */}
@@ -172,6 +125,55 @@ const Navbar = () => {
 
         <li><Link to="/cart" className="cart-icon"><FaShoppingCart /></Link></li>
       </ul>
+      
+      {/* قائمة الهامبورغر */}
+      <div className="hamburger-menu" onClick={() => setDropdownOpen(!dropdownOpen)}>
+        <FaBars className="menu-icon" /> <span>Categories</span>
+        <span onClick={() => setDropdownOpen(!dropdownOpen)} className="dropdown-toggle">
+          
+        </span>
+        <ul ref={menuRef} className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+          {/* روابط الأقسام */}
+          <Link to="/3d-printing" className="admin-link1" onClick={() => handleLinkClick('/3d-printing')}>
+            🖨️ 3D Printing
+          </Link>
+          <Link to="/dtf-clothing" className="admin-link1" onClick={() => handleLinkClick('/dtf-clothing')}>
+            👕 DTF Printing
+          </Link>
+          <Link to="/accessories" className="admin-link1" onClick={() => handleLinkClick('/accessories')}>
+            🎁 Accessories Printing
+          </Link>
+
+          {/* روابط لوحة التحكم فقط إذا كان المستخدم مدير */}
+          {user && user.email === "omarsaad01007342123@gmail.com" && (
+            <div className="admin-dropdown">
+              <Link to="/admin" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                🏠 Dashboard
+              </Link>
+              <Link to="/admin/products" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                📦 Manage Products
+              </Link>
+              <Link to="/admin/orders" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                📑 Manage Orders
+              </Link>
+              <Link to="/admin/users" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                👥 Manage Users
+              </Link>
+              <Link to="/admin/settings" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                ⚙️ Settings
+              </Link>
+            </div>
+          )}
+
+          {/* زر التبديل بين الوضعين داخل القائمة */}
+          <li>
+            <button onClick={toggleDarkMode} className="dark-mode-toggle">
+              {darkMode ? <FaSun /> : <FaMoon />}
+              {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            </button>
+          </li>
+          </ul>
+        </div>
     </nav>
   );
 };
