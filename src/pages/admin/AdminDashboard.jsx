@@ -13,6 +13,7 @@ const AdminDashboard = () => {
           <li><Link to="/admin/products"><FaBoxes /> Manage Products</Link></li>
           <li><Link to="/admin/orders"><FaChartLine /> Manage Orders</Link></li>
           <li><Link to="/admin/users"><FaUsers /> Manage Users</Link></li>
+          <li><Link to="/admin/uploads">🖼️ Manage Uploads</Link></li>
           <li><Link to="/admin/settings"><FaCog /> Settings</Link></li>
           <li><Link to="/">🏠 Back to Store</Link></li>
         </ul>

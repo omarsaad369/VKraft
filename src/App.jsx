@@ -14,14 +14,18 @@ import Checkout from "./pages/Checkout";
 import SellOnline from "./pages/SellOnline";
 import OrderForYourself from "./pages/OrderForYourself";
 import UserProfile from "./pages/UserProfile";
-import FAQ from "./pages/FAQ"; // استيراد صفحة FAQ
-import ContactUs from "./pages/ContactUs"; // استيراد صفحة Contact Us
-import AboutUs from "./pages/AboutUs"; // استيراد صفحة About Us
+import FAQ from "./pages/FAQ";
+import ContactUs from "./pages/ContactUs";
+import AboutUs from "./pages/AboutUs";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ManageProducts from "./pages/admin/ManageProducts";
 import ManageOrders from "./pages/admin/ManageOrders";
 import ManageUsers from "./pages/admin/ManageUsers";
-import AdminSettings from "./pages/admin/AdminSettings"; // استيراد الصفحة الجديدة
+import AdminSettings from "./pages/admin/AdminSettings";
+import UploadedImages from "./pages/UploadedImages";
+// ✅ استيراد مكون رفع الصور
+import UploadImage from "./components/UploadImage";
+import ManageUploads from "./pages/admin/ManageUploads";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -40,14 +44,21 @@ function App() {
           <Route path="/sell" element={<SellOnline />} />
           <Route path="/order" element={<OrderForYourself />} />
           <Route path="/user-profile" element={<UserProfile />} />
-          <Route path="/faq" element={<FAQ />} /> {/* المسار الجديد للـ FAQ */}
-          <Route path="/contact-us" element={<ContactUs />} /> {/* صفحة تواصل معنا */}
-          <Route path="/about-us" element={<AboutUs />} /> {/* صفحة عن المتجر */}
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          
+          {/* ✅ صفحة رفع الصور */}
+          <Route path="/upload-image" element={<UploadImage />} />
+
+          {/* صفحات الإدارة */}
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/products" element={<ManageProducts />} />
           <Route path="/admin/orders" element={<ManageOrders />} />
           <Route path="/admin/users" element={<ManageUsers />} />
           <Route path="/admin/settings" element={<AdminSettings />} />
+          <Route path="/uploads" element={<UploadedImages />} />
+          <Route path="/admin/uploads" element={<ManageUploads />} />
         </Routes>
         <ScrollToTop />
         <Footer />
@@ -55,4 +66,5 @@ function App() {
     </Provider>
   );
 }
+
 export default App;

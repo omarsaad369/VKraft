@@ -1,25 +1,29 @@
 // استيراد Firebase
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"; 
-import { getFirestore } from "firebase/firestore"; 
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
 
-// 🔹 بيانات مشروع Firebase
+// بيانات مشروع Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyD6A_vO_LnBGH2_o7L_S7v0f_rPbOJEMLA",
-  authDomain: "v-kraft-369.firebaseapp.com",
-  projectId: "v-kraft-369",
-  storageBucket: "v-kraft-369.appspot.com",
-  messagingSenderId: "137243708351",
-  appId: "1:137243708351:web:a7d917ba681b98bfa6f0a",
-  measurementId: "G-PC4DTCVPJ4"
+  apiKey: "AIzaSyAlA7wJRvWMHrmad2b258oD275MDwmdN1M",
+  authDomain: "vkraft369.firebaseapp.com",
+  projectId: "vkraft369",
+  storageBucket: "vkraft369.appspot.com", // ✅ تم تعديل الخطأ هنا
+  messagingSenderId: "512869473984",
+  appId: "1:512869473984:web:5f9874540efd6f8392d725",
+  measurementId: "G-2KDF7N79FV"
 };
 
 // ✅ تهيئة Firebase
 const app = initializeApp(firebaseConfig);
 
-// ✅ تهيئة خدمات Firebase المطلوبة
+// ✅ خدمات Firebase
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-// ✅ تصدير الكائنات لاستخدامها في باقي التطبيق
-export { app, auth, db };
+// ✅ التحليلات (يفضل تستخدمها فقط في الإنتاج)
+const analytics = getAnalytics(app);
+
+// ✅ تصدير للاستخدام في باقي المشروع
+export { app, auth, db, analytics };
