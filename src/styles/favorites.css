@@ -1,0 +1,250 @@
+/* تنسيق صفحة المفضلة */
+.favorites-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .favorites-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .favorite-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .favorite-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .favorite-item-details {
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .favorite-item-details h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .favorite-item-details p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .favorite-item-details .price {
+    font-size: 1.1rem;
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+
+  /* الأنماط لزر المفضلة */
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* تأثير عند التمرير فوق الزر */
+  .favorite-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* الأنماط لأيقونة المفضلة */
+  .favorite-icon {
+    font-size: 1.5rem;
+    color: #ff3366; /* لون الأيقونة (يمكنك تعديله حسب التفضيل) */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* تغيير اللون عند إضافة المنتج إلى المفضلة */
+  .favorite-btn input:checked + label svg {
+    fill: #ff3366;  /* يمكن تعديل هذا اللون ليناسب التصميم */
+    stroke: #ff3366;
+  }
+  
+  .favorite-btn input:checked + label .action .option-1 {
+    opacity: 0;
+  }
+  
+  .favorite-btn input:checked + label .action .option-2 {
+    opacity: 1;
+  }
+  
+  /* إضافة تأثير التغيير عند إضافة المنتج للمفضلة */
+  .favorite-btn:focus {
+    outline: none;
+  }
+  
+/* تنسيق صفحة المفضلة */
+.favorites-page {
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .favorites-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  /* القائمة الخاصة بالمنتجات المفضلة */
+  .favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* تنسيق العناصر داخل قائمة المفضلة */
+  .favorite-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* تأثير عند التمرير فوق العنصر */
+  .favorite-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* تنسيق الصورة داخل المنتج المفضل */
+  .favorite-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* التفاصيل الخاصة بكل منتج */
+  .favorite-item-details {
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .favorite-item-details h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .favorite-item-details p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .favorite-item-details .price {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  /* زر إزالة من المفضلة */
+  .remove-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* تأثير عند التمرير فوق زر إزالة من المفضلة */
+  .remove-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  /* الأنماط لزر المفضلة */
+  .favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* تأثير عند التمرير فوق الزر */
+  .favorite-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* الأنماط لأيقونة المفضلة */
+  .favorite-icon {
+    font-size: 2rem;
+    color: #ff3366; /* لون الأيقونة (يمكنك تعديله حسب التفضيل) */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* تغيير اللون عند إضافة المنتج إلى المفضلة */
+  .favorite-btn input:checked + label svg {
+    fill: #ff3366;  /* يمكن تعديل هذا اللون ليناسب التصميم */
+    stroke: #ff3366;
+  }
+  
+  /* إضافة تأثير التغيير عند إضافة المنتج للمفضلة */
+  .favorite-btn:focus {
+    outline: none;
+  }

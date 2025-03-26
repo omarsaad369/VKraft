@@ -5,6 +5,7 @@ import { auth } from "../firebaseConfig";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import "../styles/navbar.css";
 import "../styles/DarkMode.css";
+import NotificationsBell from '../components/NotificationsBell.jsx';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -12,6 +13,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [darkMode, setDarkMode] = useState(false);
+  const [unreadCount, setUnreadCount] = useState(0);
   const navigate = useNavigate();
   const menuRef = useRef(null);
 
@@ -20,6 +22,10 @@ const Navbar = () => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     });
+
+    const notifications = JSON.parse(localStorage.getItem("notifications")) || [];
+    const unread = notifications.filter(n => n.status === "unread").length;
+    setUnreadCount(unread);
 
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -76,14 +82,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-    
-
-    
       {/* الشعار */}
       <div className="logo">
         <Link to="/">
-          <img src="src/assets/icons/Logo_V-Kraft.png" alt="Logo" className="logo-img" />
-          <img src="src/assets/icons/LogO V Kraft.png" alt="Logo" className="logo-word" />
+          <img src="src/assets/icons/image-removebg-preview (1).png" alt="Logo" className="logo-img" />
         </Link>
       </div>
 
@@ -101,6 +103,12 @@ const Navbar = () => {
           <FaSearch />
         </button>
       </div>
+
+      {/* 🔔 زر الإشعارات */}
+      <div style={{ marginLeft: "15px" }} onClick={() => navigate("/notifications")}>
+        <NotificationsBell count={unreadCount} />
+      </div>
+
 
       {/* قائمة المستخدم */}
       <ul ref={menuRef} className={`nav-menu ${menuOpen ? "open" : ""}`}>
@@ -123,15 +131,13 @@ const Navbar = () => {
           </>
         )}
 
-        <li><Link to="/cart" className="cart-icon"><FaShoppingCart /></Link></li>
+        
       </ul>
       
       {/* قائمة الهامبورغر */}
       <div className="hamburger-menu" onClick={() => setDropdownOpen(!dropdownOpen)}>
         <FaBars className="menu-icon" /> <span>Categories</span>
-        <span onClick={() => setDropdownOpen(!dropdownOpen)} className="dropdown-toggle">
-          
-        </span>
+        <span onClick={() => setDropdownOpen(!dropdownOpen)} className="dropdown-toggle"></span>
         <ul ref={menuRef} className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
           {/* روابط الأقسام */}
           <Link to="/3d-printing" className="admin-link1" onClick={() => handleLinkClick('/3d-printing')}>
@@ -142,6 +148,9 @@ const Navbar = () => {
           </Link>
           <Link to="/accessories" className="admin-link1" onClick={() => handleLinkClick('/accessories')}>
             🎁 Accessories Printing
+          </Link>
+          <Link to="/favorites" className="admin-link1" onClick={() => handleLinkClick('/favorites')}>
+            ❤️ Favorites
           </Link>
 
           {/* روابط لوحة التحكم فقط إذا كان المستخدم مدير */}
@@ -174,6 +183,7 @@ const Navbar = () => {
           </li>
           </ul>
         </div>
+        <Link to="/cart" className="cart-icon"><FaShoppingCart /></Link>
     </nav>
   );
 };

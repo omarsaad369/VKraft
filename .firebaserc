@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "v-kraft-369"
-  }
+    "default": "vkraft369"
+  },
+  "targets": {},
+  "etags": {}
 }

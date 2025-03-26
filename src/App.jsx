@@ -26,6 +26,11 @@ import UploadedImages from "./pages/UploadedImages";
 // ✅ استيراد مكون رفع الصور
 import UploadImage from "./components/UploadImage";
 import ManageUploads from "./pages/admin/ManageUploads";
+import Favorites from "./pages/favorites";
+import Product3DPage from "./pages/Product3DPage";
+import DTFClothingPage from "./pages/DTFClothingPage";
+import AccessoriesPage from "./pages/AccessoriesPage";
+import NotificationsPage from './pages/NotificationsPage.jsx';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -59,6 +64,14 @@ function App() {
           <Route path="/admin/settings" element={<AdminSettings />} />
           <Route path="/uploads" element={<UploadedImages />} />
           <Route path="/admin/uploads" element={<ManageUploads />} />
+          <Route path="/admin/uploads" element={<ManageUploads />} />
+          
+          {/* ✅ إضافة مسار صفحة المفضلات */}
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/3d-printing" element={<Product3DPage />} />
+          <Route path="/dtf-clothing" element={<DTFClothingPage />} />
+          <Route path="/accessories" element={<AccessoriesPage />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
         </Routes>
         <ScrollToTop />
         <Footer />
