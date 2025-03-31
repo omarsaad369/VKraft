@@ -9,6 +9,12 @@ const Cart = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const handleClearCart = () => {
+    if (window.confirm("⚠️ هل تريد إفراغ السلة بالكامل؟")) {
+      dispatch(clearCart());
+    }
+  };
+
   const updatedCartItems = cartItems.map(item => ({
     ...item,
     price: item.price || 350,
@@ -27,18 +33,12 @@ const Cart = () => {
     }
   };
 
-  const handleClearCart = () => {
-    if (window.confirm("⚠️ هل تريد إفراغ السلة بالكامل؟")) {
-      dispatch(clearCart());
-    }
-  };
-
   return (
     <div className="cart-container">
       <h1>🛒 سلة التسوق</h1>
 
       {updatedCartItems.length === 0 ? (
-        <p className="empty-cart">السلة فارغة</p>
+        <p className="empty-cart">🚫 لا توجد منتجات في السلة حاليًا</p>
       ) : (
         <>
           <div className="cart-items-grid">
@@ -51,6 +51,9 @@ const Cart = () => {
 
                 <div className="cart-details">
                   <p className="product-name">{item.name || "منتج مخصص"}</p>
+                  <p><strong>المقاس:</strong> {item.size || "غير محدد"}</p>
+                  <p><strong>نوع القماش:</strong> {item.fabric || "غير محدد"}</p>
+                  <p><strong>اللون:</strong> <span style={{ color: item.color }}>{item.color}</span></p>
 
                   <div className="quantity-controls">
                     <button onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>-</button>
@@ -59,6 +62,7 @@ const Cart = () => {
                   </div>
 
                   <p className="subtotal">
+                    <strong>السعر:</strong> ${item.price * item.quantity}
                   </p>
                 </div>
 

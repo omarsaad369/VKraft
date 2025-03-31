@@ -327,3 +327,94 @@
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
+
+/* 🌙 الوضع الليلي - صفحة من نحن */
+body.dark-mode .about-us-container {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .about-us-header {
+  background: linear-gradient(135deg, #222, #333);
+  color: #fff;
+}
+
+body.dark-mode .about-us-header h1,
+body.dark-mode .about-us-header p {
+  color: #fff;
+}
+
+body.dark-mode .about-us-text h2,
+body.dark-mode .about-us-mission h2,
+body.dark-mode .about-us-values h2,
+body.dark-mode .about-us-timeline h2,
+body.dark-mode .about-us-testimonials h2,
+body.dark-mode .about-us-team h2 {
+  color: #4da3ff;
+}
+
+body.dark-mode .about-us-text p,
+body.dark-mode .about-us-mission p,
+body.dark-mode .value-item p,
+body.dark-mode .timeline li,
+body.dark-mode .testimonial,
+body.dark-mode .team-member p,
+body.dark-mode .about-us-footer p {
+  color: #ddd;
+}
+
+body.dark-mode .about-us-image img {
+  filter: brightness(0.85);
+}
+
+body.dark-mode .about-us-mission,
+body.dark-mode .value-item,
+body.dark-mode .about-us-testimonials,
+body.dark-mode .team-member {
+  background-color: #2b2b2b;
+  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode .value-item h3,
+body.dark-mode .team-member h4 {
+  color: #4da3ff;
+}
+
+body.dark-mode .about-us-values {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .about-us-footer {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+body.dark-mode .timeline li span {
+  color: #4da3ff;
+}
+
+/* القائد */
+body.dark-mode .team-member.leader {
+  border-color: #f1c40f;
+  box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
+}
+
+body.dark-mode .team-member.leader .badge {
+  background-color: #f1c40f;
+  color: #111;
+}
+
+body.dark-mode .team-member.leader .crown {
+  color: #f1c40f;
+}
+
+body.dark-mode .testimonial {
+  background-color: #333;
+  color: #ccc;
+}
+
+/* البادج */
+body.dark-mode .badge {
+  background-color: #ffc107;
+  color: #000;
+}

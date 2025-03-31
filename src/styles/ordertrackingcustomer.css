@@ -120,3 +120,70 @@
     font-size: 0.9rem;
   }
 }
+
+/* 🌙 الوضع الليلي لصفحة تتبع الطلبات */
+body.dark-mode .customer-order-tracking-container {
+  background-color: #1f1f1f;
+  color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .tracking-title {
+  color: #ffffff;
+}
+
+body.dark-mode .tracking-table {
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode .tracking-table th {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+body.dark-mode .tracking-table td {
+  border-bottom: 1px solid #333;
+  color: #dddddd;
+}
+
+body.dark-mode .tracking-table tr:hover {
+  background-color: #2c2c2c;
+}
+
+/* ألوان الحالات في الوضع الليلي */
+body.dark-mode .status-cell.in-progress {
+  background-color: #665c00;
+  color: #fff3cd;
+}
+
+body.dark-mode .status-cell.shipped {
+  background-color: #004b6b;
+  color: #cce5ff;
+}
+
+body.dark-mode .status-cell.completed {
+  background-color: #1f4d2c;
+  color: #d4edda;
+}
+
+body.dark-mode .status-cell.unknown {
+  background-color: #4d4d4d;
+  color: #d6d6d6;
+}
+
+/* progress bar في الوضع الليلي */
+body.dark-mode .progress-bar {
+  background-color: #444;
+}
+
+body.dark-mode .progress-fill.in-progress {
+  background-color: #ffca2c;
+}
+
+body.dark-mode .progress-fill.shipped {
+  background-color: #17a2b8;
+}
+
+body.dark-mode .progress-fill.completed {
+  background-color: #28a745;
+}

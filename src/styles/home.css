@@ -79,3 +79,8 @@ margin-bottom: 15px; /* إضافة مسافة أسفل السعر */
 font-size: 16px; /* حجم الخط لاسم المنتج */
 font-weight: bold; /* جعل اسم المنتج سميكًا */
 }
+
+/* الوضع الليلي - عنوان الصفحة */
+body.dark-mode .home-container h1 {
+  color: #ffffff; /* أو أي لون فاتح مثل #f1f1f1 */
+}

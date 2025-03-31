@@ -16,6 +16,7 @@ const Navbar = () => {
   const [unreadCount, setUnreadCount] = useState(0);
   const navigate = useNavigate();
   const menuRef = useRef(null);
+  
 
   // مراقبة حالة المستخدم
   useEffect(() => {
@@ -105,7 +106,7 @@ const Navbar = () => {
       </div>
 
       {/* 🔔 زر الإشعارات */}
-      <div style={{ marginLeft: "15px" }} onClick={() => navigate("/notifications")}>
+      <div className="noti" style={{ marginLeft: "15px" }} onClick={() => navigate("/notifications")}>
         <NotificationsBell count={unreadCount} />
       </div>
 

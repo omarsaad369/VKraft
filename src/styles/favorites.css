@@ -146,3 +146,63 @@
     padding: 10px 16px;
   }
 }
+
+/* 🌙 الوضع الليلي - صفحة المفضلة */
+
+body.dark-mode .favorites-page {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .favorites-page h1 {
+  color: #fff;
+}
+
+body.dark-mode .clear-favorites-btn {
+  background-color: #ff5252;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 82, 82, 0.2);
+}
+
+body.dark-mode .clear-favorites-btn:hover {
+  background-color: #e53935;
+}
+
+body.dark-mode .no-favorites {
+  color: #aaa;
+}
+
+body.dark-mode .favorite-item {
+  background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .favorite-item-details h3 {
+  color: #fff;
+}
+
+body.dark-mode .favorite-item-details p {
+  color: #ccc;
+}
+
+body.dark-mode .favorite-price {
+  color: #4da3ff;
+}
+
+body.dark-mode .add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+body.dark-mode .add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+body.dark-mode .remove-btn {
+  background-color: #f06292;
+  color: #fff;
+}
+
+body.dark-mode .remove-btn:hover {
+  background-color: #d81b60;
+}

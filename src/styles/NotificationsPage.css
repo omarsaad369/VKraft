@@ -99,3 +99,52 @@
     transform: translateY(0);
   }
 }
+
+/* 🌙 الوضع الليلي لصفحة الإشعارات */
+
+body.dark-mode .notifications-page {
+  background-color: #121212;
+}
+
+body.dark-mode .notifications-container {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .notifications-title {
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode .no-notifications {
+  color: #aaa;
+}
+
+body.dark-mode .filters select {
+  background-color: #2c2c2c;
+  color: #f9f9f9;
+  border: 1px solid #555;
+}
+
+body.dark-mode .filters select:focus {
+  border-color: #4da3ff;
+}
+
+body.dark-mode .mark-read-btn {
+  background-color: #4da3ff;
+  color: #fff;
+}
+
+body.dark-mode .mark-read-btn:hover {
+  background-color: #1e88e5;
+}
+
+body.dark-mode .clear-btn {
+  background-color: #e53935;
+  color: #fff;
+}
+
+body.dark-mode .clear-btn:hover {
+  background-color: #c62828;
+}

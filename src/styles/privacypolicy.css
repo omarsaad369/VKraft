@@ -163,3 +163,66 @@ a:hover {
 .extra-style-4 { display: none; }
 /* ... إلى */
 .extra-style-100 { display: none; }
+
+body.dark-mode .privacy-policy-container {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.04);
+}
+
+body.dark-mode .policy-title {
+  color: #ffffff;
+}
+
+body.dark-mode .intro-text {
+  background-color: #2c2c2c;
+  border-right: 5px solid #66b2ff;
+  color: #cccccc;
+}
+
+body.dark-mode .policy-section {
+  background-color: #2a2a2a;
+  border-left: 5px solid #66b2ff;
+  box-shadow: 0 4px 18px rgba(255, 255, 255, 0.04);
+}
+
+body.dark-mode .policy-section::before {
+  background-color: #66b2ff;
+  opacity: 0.1;
+}
+
+body.dark-mode .policy-section h2 {
+  color: #66b2ff;
+}
+
+body.dark-mode .policy-section p {
+  color: #dddddd;
+}
+
+body.dark-mode a {
+  color: #66b2ff;
+}
+
+body.dark-mode a:hover {
+  color: #3399ff;
+}
+
+body.dark-mode .privacy-policy-container .highlight {
+  background-color: #4e4400;
+  border-left: 4px solid #ffca2c;
+  color: #ffeb99;
+}
+
+body.dark-mode .policy-section ul li {
+  color: #dddddd;
+}
+
+body.dark-mode .policy-section ul li::before {
+  color: #28a745;
+}
+
+body.dark-mode .footer-note {
+  color: #aaa;
+  border-top: 1px solid #444;
+}
+
