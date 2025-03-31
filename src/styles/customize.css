@@ -166,3 +166,7 @@ input[type="file"]:disabled {
 .custom-size-container input {
   margin-top: 0.5rem;
 }
+
+.SelectSize{
+  height: 50px;
+}

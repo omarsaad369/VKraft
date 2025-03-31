@@ -1,33 +1,24 @@
-// src/components/NotificationsBell.js
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import '../styles/NotificationsBell.css'; // نضيف ملف CSS منفصل للستايل
 export default function NotificationsBell({ onClick, count }) {
+  const [shake, setShake] = useState(false);
+
+  // 🔁 اهتزاز الجرس عند وصول إشعار جديد
+  useEffect(() => {
+    if (count > 0) {
+      setShake(true);
+      const timeout = setTimeout(() => setShake(false), 600); // مدة الاهتزاز
+      return () => clearTimeout(timeout);
+    }
+  }, [count]);
+
   return (
     <div
+      className={`notifications-bell ${shake ? 'shake' : ''}`}
       onClick={onClick}
-      style={{ position: 'relative', cursor: 'pointer', fontSize: '20px' }}
     >
       🔔
-      {count > 0 && (
-        <span
-          style={{
-            position: 'absolute',
-            top: '-8px',
-            right: '-8px',
-            backgroundColor: 'red',
-            color: 'white',
-            fontSize: '10px',
-            borderRadius: '50%',
-            width: '18px',
-            height: '18px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          {count}
-        </span>
-      )}
+      {count > 0 && <span className="notification-count">{count}</span>}
     </div>
   );
 }

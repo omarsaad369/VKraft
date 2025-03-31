@@ -1,164 +1,193 @@
-/* تصميم الصفحة */
+/* ✅ الحاوية العامة */
 .manage-users-container {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-  
-  /* عنوان الصفحة */
-  .page-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* حاوية قائمة المستخدمين */
-  .user-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  /* بطاقة المستخدم */
-  .user-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
-  
-  /* التأثير عند المرور على البطاقة */
-  .user-card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* معلومات المستخدم */
-  .user-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  /* أيقونة المستخدم */
-  .user-icon {
-    font-size: 40px;
-    color: #ff6600;
-  }
-  
-  /* تفاصيل المستخدم */
-  .user-info h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  .user-info p {
-    color: #777;
-    font-size: 14px;
-  }
-  
-  /* زر الحذف */
-  .delete-btn {
-    background-color: #ff3b30;
-    color: white;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* تأثير عند المرور على زر الحذف */
-  .delete-btn:hover {
-    background-color: #d32f2f;
-  }
-  
-  /* النص في حالة عدم وجود مستخدمين */
-  .no-users {
-    font-size: 18px;
-    color: #999;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* تأثير مؤشر التحميل */
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ✅ أدوات البحث */
+.user-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.total-count {
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+}
+
+/* ✅ قائمة المستخدمين */
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  box-shadow: 0 2px 12px rgba(0, 123, 255, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-icon {
+  font-size: 30px;
+  color: #007bff;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.user-info p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ✅ زر الحذف */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* ✅ عند عدم وجود مستخدمين */
+.no-users {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* ✅ لودر ثلاثي الأبعاد */
 .pyramid-loader {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  display: block;
-  transform-style: preserve-3d;
-  transform: rotateX(-20deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 .wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  height: 80px;
   transform-style: preserve-3d;
-  animation: spin 4s linear infinite;
+  animation: rotate 1.5s linear infinite;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotateY(360deg);
+.side {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #007bff;
+  opacity: 0.85;
+  border: 1px solid #eee;
+}
+
+.side1 { transform: rotateY(0deg) translateZ(40px); }
+.side2 { transform: rotateY(90deg) translateZ(40px); }
+.side3 { transform: rotateY(180deg) translateZ(40px); }
+.side4 { transform: rotateY(-90deg) translateZ(40px); }
+
+.shadow {
+  position: absolute;
+  width: 80px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  bottom: -15px;
+  border-radius: 50%;
+  filter: blur(6px);
+}
+
+@keyframes rotate {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+/* ✅ استجابة للجوال */
+@media (max-width: 600px) {
+  .user-tools {
+    flex-direction: column;
+    align-items: stretch;
   }
-}
 
-.pyramid-loader .wrapper .side {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transform-origin: center top;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
+  .search-input {
+    width: 100%;
+  }
 
-.pyramid-loader .wrapper .side1 {
-  transform: rotateZ(-30deg) rotateY(90deg);
-  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
-}
+  .total-count {
+    text-align: left;
+    margin-top: 5px;
+  }
 
-.pyramid-loader .wrapper .side2 {
-  transform: rotateZ(30deg) rotateY(90deg);
-  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
-}
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-.pyramid-loader .wrapper .side3 {
-  transform: rotateX(30deg);
-  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
-}
-
-.pyramid-loader .wrapper .side4 {
-  transform: rotateX(-30deg);
-  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
-}
-
-.pyramid-loader .wrapper .shadow {
-  width: 60px;
-  height: 60px;
-  background: #8B5AD5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transform: rotateX(90deg) translateZ(-40px);
-  filter: blur(12px);
+  .delete-btn {
+    width: 100%;
+  }
 }

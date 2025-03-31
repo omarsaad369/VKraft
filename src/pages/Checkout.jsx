@@ -121,11 +121,6 @@ const Checkout = () => {
         </select>
       </div>
 
-      {/* 📌 إجمالي الطلب */}
-      <div className="checkout-summary">
-        <h3>💰 إجمالي السعر: {totalPrice.toFixed(2)} جنيه مصري</h3>
-      </div>
-
       {/* ✅ زر تأكيد الطلب */}
       <button onClick={handleConfirmOrder} className="confirm-order-btn">
         ✅ تأكيد الطلب

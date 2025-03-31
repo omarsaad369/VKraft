@@ -1,7 +1,10 @@
+// src/redux/slices/userSlice.js
+
 import { createSlice } from "@reduxjs/toolkit";
+import initialUsers from "../../data/initialUsers"; // استيراد المستخدمين المبدئيين
 
 const initialState = {
-  users: [], // التأكد من أن users هي مصفوفة
+  users: initialUsers, // ملء الحالة بالمستخدمين الجاهزين
 };
 
 const userSlice = createSlice({
@@ -9,10 +12,10 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     addUser: (state, action) => {
-      state.users.push(action.payload); // إضافة مستخدم جديد
+      state.users.push(action.payload);
     },
     deleteUser: (state, action) => {
-      state.users = state.users.filter((user) => user.id !== action.payload); // حذف المستخدم
+      state.users = state.users.filter((user) => user.id !== action.payload);
     },
   },
 });

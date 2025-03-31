@@ -1,250 +1,148 @@
-/* تنسيق صفحة المفضلة */
 .favorites-page {
-    padding: 20px;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-  }
-  
-  .favorites-page h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .favorites-list {
-    display: flex;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+}
+
+.favorites-page h1 {
+  font-size: 2.4rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.clear-favorites-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto 40px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.clear-favorites-btn:hover {
+  background-color: #d32f2f;
+}
+
+.no-favorites {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #777;
+  margin-top: 50px;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.favorite-item {
+  background: linear-gradient(145deg, #ffffff, #f4f4f4);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.favorite-item-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.favorite-item-details h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.favorite-item-details p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.favorite-price {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.favorite-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn,
+.remove-btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+.remove-btn {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.remove-btn:hover {
+  background-color: #c2185b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .favorite-actions {
     flex-direction: column;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .favorite-item {
-    display: flex;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    align-items: center;
-  }
-  
-  .favorite-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .favorite-item-details {
-    margin-left: 20px;
-    flex: 1;
-  }
-  
-  .favorite-item-details h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 0;
-  }
-  
-  .favorite-item-details p {
-    color: #666;
-    font-size: 1rem;
-  }
-  
-  .favorite-item-details .price {
-    font-size: 1.1rem;
-    color: #e74c3c;
-    margin-top: 10px;
-  }
-  
-  .remove-btn {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .remove-btn:hover {
-    background-color: #c0392b;
+    gap: 10px;
   }
 
-  /* الأنماط لزر المفضلة */
-.favorite-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  /* تأثير عند التمرير فوق الزر */
-  .favorite-btn:hover {
-    transform: scale(1.1);
-  }
-  
-  /* الأنماط لأيقونة المفضلة */
-  .favorite-icon {
-    font-size: 1.5rem;
-    color: #ff3366; /* لون الأيقونة (يمكنك تعديله حسب التفضيل) */
-    transition: color 0.3s ease-in-out;
-  }
-  
-  /* تغيير اللون عند إضافة المنتج إلى المفضلة */
-  .favorite-btn input:checked + label svg {
-    fill: #ff3366;  /* يمكن تعديل هذا اللون ليناسب التصميم */
-    stroke: #ff3366;
-  }
-  
-  .favorite-btn input:checked + label .action .option-1 {
-    opacity: 0;
-  }
-  
-  .favorite-btn input:checked + label .action .option-2 {
-    opacity: 1;
-  }
-  
-  /* إضافة تأثير التغيير عند إضافة المنتج للمفضلة */
-  .favorite-btn:focus {
-    outline: none;
-  }
-  
-/* تنسيق صفحة المفضلة */
-.favorites-page {
-    padding: 20px;
-    background-color: #f4f4f9;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .favorites-page h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  
-  /* القائمة الخاصة بالمنتجات المفضلة */
-  .favorites-list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  /* تنسيق العناصر داخل قائمة المفضلة */
-  .favorite-item {
-    display: flex;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* تأثير عند التمرير فوق العنصر */
-  .favorite-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* تنسيق الصورة داخل المنتج المفضل */
-  .favorite-item img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* التفاصيل الخاصة بكل منتج */
-  .favorite-item-details {
-    margin-left: 20px;
-    flex: 1;
-  }
-  
-  .favorite-item-details h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin: 0;
-    font-weight: 600;
-  }
-  
-  .favorite-item-details p {
-    color: #666;
-    font-size: 1rem;
-  }
-  
-  .favorite-item-details .price {
-    font-size: 1.2rem;
-    color: #e74c3c;
-    margin-top: 10px;
-    font-weight: 600;
-  }
-  
-  /* زر إزالة من المفضلة */
-  .remove-btn {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  /* تأثير عند التمرير فوق زر إزالة من المفضلة */
-  .remove-btn:hover {
-    background-color: #c0392b;
-    transform: translateY(-2px);
-  }
-  
-  /* الأنماط لزر المفضلة */
-  .favorite-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  /* تأثير عند التمرير فوق الزر */
-  .favorite-btn:hover {
-    transform: scale(1.1);
-  }
-  
-  /* الأنماط لأيقونة المفضلة */
-  .favorite-icon {
     font-size: 2rem;
-    color: #ff3366; /* لون الأيقونة (يمكنك تعديله حسب التفضيل) */
-    transition: color 0.3s ease-in-out;
   }
-  
-  /* تغيير اللون عند إضافة المنتج إلى المفضلة */
-  .favorite-btn input:checked + label svg {
-    fill: #ff3366;  /* يمكن تعديل هذا اللون ليناسب التصميم */
-    stroke: #ff3366;
+
+  .clear-favorites-btn {
+    font-size: 0.95rem;
+    padding: 10px 16px;
   }
-  
-  /* إضافة تأثير التغيير عند إضافة المنتج للمفضلة */
-  .favorite-btn:focus {
-    outline: none;
-  }
+}

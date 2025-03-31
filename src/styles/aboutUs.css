@@ -1,120 +1,329 @@
 /* الحاوية الرئيسية */
 .about-us-container {
-    width: 85%;
-    margin: 0 auto;
-    padding: 50px 0;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* رأس الصفحة */
+.about-us-header {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.about-us-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.about-us-header p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* القصة */
+.about-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.about-us-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.about-us-text p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.about-us-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* الرسالة */
+.about-us-mission {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.about-us-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.about-us-mission p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* القيم */
+.about-us-values {
+  padding: 60px 0;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.about-us-values h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.value-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* الخط الزمني */
+.about-us-timeline {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.about-us-timeline h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline1{
+  text-align:justify;
+  padding-left:400px;
+}
+
+.timeline li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.timeline li span {
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 8px;
+}
+
+/* آراء العملاء */
+.about-us-testimonials {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+  margin-bottom: 60px;
+}
+
+.about-us-testimonials h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.testimonial-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 25px 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  font-style: italic;
+  color: #555;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* الفريق */
+.about-us-team {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.about-us-team h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+  max-width: 220px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.team-member h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* التذييل */
+.about-us-footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.about-us-footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* استجابة */
+@media (max-width: 768px) {
+  .about-us-content {
+    grid-template-columns: 1fr;
     text-align: center;
   }
-  
-  /* رأس الصفحة */
-  .about-us-header {
-    background-color: #007bff;
-    color: white;
-    padding: 50px 0;
-    border-radius: 8px;
-  }
-  
-  .about-us-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-header p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* المحتوى الأساسي */
-  .about-us-content {
-    display: grid;
+
+  .team-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  }
+
+  .testimonial-boxes {
+    flex-direction: column;
     align-items: center;
-    margin: 40px 0;
   }
-  
-  .about-us-text {
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
-  .about-us-text h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* القسم الخاص بالرسالة */
-  .about-us-mission {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    margin: 40px 0;
-  }
-  
-  .about-us-mission h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-mission p {
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
-  /* قيم الشركة */
-  .about-us-values {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-  }
-  
-  .about-us-values h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .value-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .value-item h3 {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
-  }
-  
-  .value-item p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  /* تذييل الصفحة */
-  .about-us-footer {
-    margin-top: 40px;
-    padding: 20px 0;
-    background-color: #007bff;
-    color: white;
-    border-radius: 8px;
-  }
-  
-  .about-us-footer p {
-    font-size: 1rem;
-  }
-  
+}
+
+/* الشارة */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffc107;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* التاج */
+.team-member.leader .crown {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  color: gold;
+  z-index: 2;
+}
+
+/* مظهر بطاقة القائد */
+.team-member.leader {
+  border: 2px solid #ffc107;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
+  overflow: visible;
+  transition: transform 0.4s ease;
+}
+
+.team-member.leader:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.team-member.leader .badge {
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+  background-color: #ffc107;
+  color: black;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.team-member.leader h4 {
+  background: linear-gradient(90deg, #f9c802, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}

@@ -144,13 +144,19 @@ const Navbar = () => {
             🖨️ 3D Printing
           </Link>
           <Link to="/dtf-clothing" className="admin-link1" onClick={() => handleLinkClick('/dtf-clothing')}>
-            👕 DTF Printing
+            👕  Clothing & DTF 
           </Link>
           <Link to="/accessories" className="admin-link1" onClick={() => handleLinkClick('/accessories')}>
-            🎁 Accessories Printing
+            🎁 Accessories 
           </Link>
           <Link to="/favorites" className="admin-link1" onClick={() => handleLinkClick('/favorites')}>
             ❤️ Favorites
+          </Link>
+          <Link to="/customer-order-tracking" className="admin-link" onClick={() => setDropdownOpen(false)}>
+            📦 Customer Order Tracking
+          </Link>
+          <Link to="/privacy-policy" className="admin-link" onClick={() => setDropdownOpen(false)}>
+            🔒 PrivacyPolicy
           </Link>
 
           {/* روابط لوحة التحكم فقط إذا كان المستخدم مدير */}
@@ -162,11 +168,11 @@ const Navbar = () => {
               <Link to="/admin/products" className="admin-link" onClick={() => setDropdownOpen(false)}>
                 📦 Manage Products
               </Link>
-              <Link to="/admin/orders" className="admin-link" onClick={() => setDropdownOpen(false)}>
-                📑 Manage Orders
-              </Link>
               <Link to="/admin/users" className="admin-link" onClick={() => setDropdownOpen(false)}>
                 👥 Manage Users
+              </Link>
+              <Link to="/admin/order-tracking" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                📦 Order Tracking
               </Link>
               <Link to="/admin/settings" className="admin-link" onClick={() => setDropdownOpen(false)}>
                 ⚙️ Settings

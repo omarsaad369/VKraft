@@ -5,6 +5,7 @@ import { addToCart } from "../redux/slices/cartSlice";
 import { SketchPicker } from "react-color";
 import Draggable from "react-draggable";
 import "../styles/customize.css";
+import { useEffect } from "react"; // تأكد أنه مستورد
 
 const Customize = () => {
   const dispatch = useDispatch();
@@ -82,6 +83,14 @@ const Customize = () => {
     alert("📎 Link copied! Share it with others.");
   };
 
+  useEffect(() => {
+    const savedImage = localStorage.getItem("customImage");
+    if (savedImage) {
+      dispatch(setImage(savedImage));
+      localStorage.removeItem("customImage");
+    }
+  }, [dispatch]);
+
   return (
     <div className="customize-container">
       <h1>🎨 Customize Your Product</h1>
@@ -104,7 +113,7 @@ const Customize = () => {
         
         {/* اختيار المقاس */}
         <label>📏 Select Size:</label>
-        <select onChange={handleSizeChange} value={customization.size}>
+        <select onChange={handleSizeChange} value={customization.size} className="SelectSize">
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -127,7 +136,7 @@ const Customize = () => {
 
         {/* اختيار نوع القماش */}
         <label>🧵 Select Fabric Type:</label>
-        <select onChange={handleFabricChange} value={customization.fabric}>
+        <select onChange={handleFabricChange} value={customization.fabric} className="SelectSize">
           <option value="cotton">Cotton</option>
           <option value="polyester">Polyester</option>
           <option value="silk">Silk</option>

@@ -1,95 +1,101 @@
 /* NotificationsPage.css */
 
 .notifications-page {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+  background-color: #f5f6f8;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.notifications-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  max-width: 750px;
+  width: 100%;
+  padding: 30px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.notifications-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.no-notifications {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  margin-top: 40px;
+}
+
+.notifications-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.mark-read-btn,
+.clear-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.mark-read-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.mark-read-btn:hover {
+  background-color: #0056b3;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #a71d2a;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  min-width: 160px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .notifications-container {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-    max-width: 700px;
-    width: 100%;
-    padding: 30px;
-    animation: fadeIn 0.4s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .notifications-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #333;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-  }
-  
-  .no-notifications {
-    text-align: center;
-    color: #999;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(15px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .notifications-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-  }
-  
-  .notifications-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .mark-read-btn,
-  .clear-btn {
-    padding: 8px 14px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    border: none;
-    transition: background 0.2s;
-  }
-  
-  .mark-read-btn {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .mark-read-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .clear-btn {
-    background-color: #dc3545;
-    color: #fff;
-  }
-  
-  .clear-btn:hover {
-    background-color: #a52834;
-  }
-  
-  
+}

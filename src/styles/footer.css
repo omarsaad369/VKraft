@@ -46,8 +46,24 @@
 .links-section .col {
     flex: 1; /* تخصيص كل عمود ليأخذ نفس العرض */
     margin: 10px; /* إضافة مسافة بين الأعمدة */
+    text-align: left;
 }
-  
+.colCompany{
+    text-align: left;
+}
+.colProducts{
+    text-align: left;
+
+}
+.colUseful{
+    text-align: left;
+
+}
+.colContact{
+    text-align: left;
+
+}
+
 /* تنسيق العناوين */
 h6 {
     font-weight: bold; /* جعل النص عريضًا */
@@ -80,7 +96,7 @@ a:hover {
   
 /* تخصيص محاذاة النص */
 .text-center {
-    text-align: center; /* محاذاة النص إلى المنتصف */
+    text-align: left; /* محاذاة النص إلى المنتصف */
 }
   
 /* محاذاة النص إلى اليسار في الأجهزة الكبيرة */
@@ -116,4 +132,27 @@ a:hover {
 /* تخصيص روابط حقوق الملكية */
 .footer .footer-rights a {
     color: #333; /* تعيين اللون الداكن للروابط */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .links-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links-section .col {
+    margin-bottom: 20px;
+  }
+}
+
+/* Animation للأيقونات */
+.social-icons a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffeb3b;
 }

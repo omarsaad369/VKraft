@@ -1,53 +1,79 @@
-/* NotificationItem.css */
-
 .notification-card {
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 16px 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .notification-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  
-  .notification-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 6px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .notification-title::before {
-    content: "🔔";
-    font-size: 16px;
-  }
-  
-  .notification-message {
-    font-size: 14px;
-    color: #444;
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
-  
-  .notification-date {
-    font-size: 12px;
-    color: #888;
-    text-align: left;
-  }
-  
-  /* تمييز غير المقروء */
-  .unread {
-    border-left: 4px solid #007bff;
-    background-color: #f0f7ff;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.notification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification-message {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.notification-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* تمييز الإشعار الغير مقروء */
+.unread {
+  border-left: 4px solid #007bff;
+  background-color: #f0f7ff;
+}
+
+/* زر حذف الإشعار */
+.delete-notification-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.delete-notification-btn:hover {
+  color: #d00;
+}
+
+/* ألوان حسب نوع الإشعار */
+.notification-card.order {
+  border-right: 4px solid #28a745; /* أخضر */
+}
+
+.notification-card.system {
+  border-right: 4px solid #17a2b8; /* أزرق فاتح */
+}
+
+.notification-card.offer {
+  border-right: 4px solid #ffc107; /* أصفر */
+}

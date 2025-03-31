@@ -19,7 +19,6 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ManageProducts from "./pages/admin/ManageProducts";
-import ManageOrders from "./pages/admin/ManageOrders";
 import ManageUsers from "./pages/admin/ManageUsers";
 import AdminSettings from "./pages/admin/AdminSettings";
 import UploadedImages from "./pages/UploadedImages";
@@ -31,6 +30,11 @@ import Product3DPage from "./pages/Product3DPage";
 import DTFClothingPage from "./pages/DTFClothingPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
 import NotificationsPage from './pages/NotificationsPage.jsx';
+import Help from "./pages/Help";
+import OrderTracking from "./pages/admin/OrderTracking";
+import CustomerOrderTracking from "./pages/ordertrackingcustomer";
+import PrivacyPolicy from "./pages/privacypolicy.jsx";
+import AddProduct from "./pages/admin/AddProduct";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -59,7 +63,6 @@ function App() {
           {/* صفحات الإدارة */}
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/products" element={<ManageProducts />} />
-          <Route path="/admin/orders" element={<ManageOrders />} />
           <Route path="/admin/users" element={<ManageUsers />} />
           <Route path="/admin/settings" element={<AdminSettings />} />
           <Route path="/uploads" element={<UploadedImages />} />
@@ -72,6 +75,11 @@ function App() {
           <Route path="/dtf-clothing" element={<DTFClothingPage />} />
           <Route path="/accessories" element={<AccessoriesPage />} />
           <Route path="/notifications" element={<NotificationsPage />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/admin/order-tracking" element={<OrderTracking />} />
+          <Route path="/customer-order-tracking" element={<CustomerOrderTracking />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/add-product" element={<AddProduct />} />
         </Routes>
         <ScrollToTop />
         <Footer />

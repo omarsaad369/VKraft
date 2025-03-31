@@ -70,7 +70,7 @@ const SellOnline = () => {
       <div className="product-list">
         <h2>قائمة المنتجات</h2>
         {products.length === 0 ? (
-          <p>لا توجد منتجات حالياً.</p>
+          <p>لا توجد منتجات حالياً</p>
         ) : (
           <div className="products">
             {products.map((product, index) => (

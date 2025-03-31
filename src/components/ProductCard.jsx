@@ -28,7 +28,11 @@ const ProductCard = ({ product }) => {
   };
 
   const handleCustomize = () => {
-    navigate("/customize"); // التنقل إلى صفحة التخصيص
+    // 1. حفظ صورة المنتج في localStorage مؤقتًا
+    localStorage.setItem("customImage", product.image);
+  
+    // 2. التنقل إلى صفحة التخصيص
+    navigate("/customize");
   };
 
 

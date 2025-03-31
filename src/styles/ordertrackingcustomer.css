@@ -1,0 +1,122 @@
+/* تصميم احترافي لصفحة تتبع الطلبات */
+
+.customer-order-tracking-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+}
+
+.tracking-title {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tracking-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tracking-table th,
+.tracking-table td {
+  padding: 16px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.tracking-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tracking-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  width: 160px; /* 👈 عرض ثابت لكل الحالات */
+  min-height: 40px;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* ألوان الحالات */
+.in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.unknown {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+/* progress bar */
+.progress-bar {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.progress-fill.in-progress {
+  background-color: #ffc107;
+}
+
+.progress-fill.shipped {
+  background-color: #17a2b8;
+}
+
+.progress-fill.completed {
+  background-color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .tracking-title {
+    font-size: 1.6rem;
+  }
+
+  .tracking-table th,
+  .tracking-table td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+}
