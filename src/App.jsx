@@ -31,7 +31,7 @@ import DTFClothingPage from "./pages/DTFClothingPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
 import NotificationsPage from './pages/NotificationsPage.jsx';
 import Help from "./pages/Help";
-import OrderTracking from "./pages/admin/OrderTracking";
+import OrderTracking from "./pages/admin/OrderTracking.jsx";
 import CustomerOrderTracking from "./pages/ordertrackingcustomer";
 import PrivacyPolicy from "./pages/privacypolicy.jsx";
 import AddProduct from "./pages/admin/AddProduct";
