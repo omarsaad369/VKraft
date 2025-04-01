@@ -6,6 +6,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import "../styles/navbar.css";
 import "../styles/DarkMode.css";
 import NotificationsBell from '../components/NotificationsBell.jsx';
+import logo from '../assets/icons/LOGOO.png';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -86,7 +87,7 @@ const Navbar = () => {
       {/* الشعار */}
       <div className="logo">
         <Link to="/">
-          <img src="src/assets/icons/image-removebg-preview (1).png" alt="Logo" className="logo-img" />
+          <img src={logo} alt="Logo" className="logo-img" />
         </Link>
       </div>
 
