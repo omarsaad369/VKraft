@@ -82,7 +82,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/add-product" element={<AddProduct />} />
           <Route path="/search" element={<SearchResultsPage />} />
-          <Route path="/order-tracking" element={<OrderTracking />} />
+          <Route path="/admin/order-tracking" element={<OrderTracking />} />
         </Routes>
         <ScrollToTop />
         <Footer />
