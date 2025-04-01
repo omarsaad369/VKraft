@@ -29,11 +29,10 @@ import Favorites from "./pages/favorites";
 import Product3DPage from "./pages/Product3DPage";
 import DTFClothingPage from "./pages/DTFClothingPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
-import NotificationsPage from './pages/NotificationsPage';
+import NotificationsPage from './pages/NotificationsPage.jsx';
 import Help from "./pages/Help";
-import OrderTracking from "./pages/admin/OrderTracking";
 import CustomerOrderTracking from "./pages/ordertrackingcustomer";
-import PrivacyPolicy from "./pages/privacypolicy";
+import PrivacyPolicy from "./pages/privacypolicy.jsx";
 import AddProduct from "./pages/admin/AddProduct";
 import SearchResultsPage from './pages/SearchResultsPage';
 
@@ -77,7 +76,6 @@ function App() {
           <Route path="/accessories" element={<AccessoriesPage />} />
           <Route path="/notifications" element={<NotificationsPage />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/admin/order-tracking" element={<OrderTracking />} />
           <Route path="/customer-order-tracking" element={<CustomerOrderTracking />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/add-product" element={<AddProduct />} />
