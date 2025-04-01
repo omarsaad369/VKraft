@@ -29,11 +29,11 @@ import Favorites from "./pages/favorites";
 import Product3DPage from "./pages/Product3DPage";
 import DTFClothingPage from "./pages/DTFClothingPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
-import NotificationsPage from './pages/NotificationsPage.jsx';
+import NotificationsPage from './pages/NotificationsPage';
 import Help from "./pages/Help";
-import OrderTracking from "./pages/admin/OrderTracking.jsx";
+import OrderTracking from "./pages/admin/OrderTracking";
 import CustomerOrderTracking from "./pages/ordertrackingcustomer";
-import PrivacyPolicy from "./pages/privacypolicy.jsx";
+import PrivacyPolicy from "./pages/privacypolicy";
 import AddProduct from "./pages/admin/AddProduct";
 import SearchResultsPage from './pages/SearchResultsPage';
 
