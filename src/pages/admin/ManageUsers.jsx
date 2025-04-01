@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteUser } from "../../redux/slices/userSlice";
 import { FaTrashAlt, FaUser, FaSearch, FaUsers } from "react-icons/fa";
-import "../../styles/manageUsers.css";
+import "../../styles/ManageUsers.css";
 
 const ManageUsers = () => {
   const dispatch = useDispatch();
