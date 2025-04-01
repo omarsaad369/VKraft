@@ -35,6 +35,8 @@ import CustomerOrderTracking from "./pages/ordertrackingcustomer";
 import PrivacyPolicy from "./pages/privacypolicy.jsx";
 import AddProduct from "./pages/admin/AddProduct";
 import SearchResultsPage from './pages/SearchResultsPage';
+import OrderTracking from "./pages/admin/OrderTracking";
+
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -80,6 +82,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/add-product" element={<AddProduct />} />
           <Route path="/search" element={<SearchResultsPage />} />
+          <Route path="/admin/order-tracking" element={<OrderTracking />} />
         </Routes>
         <ScrollToTop />
         <Footer />

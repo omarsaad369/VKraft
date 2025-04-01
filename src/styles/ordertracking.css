@@ -1,0 +1,203 @@
+.order-tracking-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.07);
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+  }
+  
+  .order-tracking-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  /* ===== أدوات البحث والتصفية ===== */
+  .tracking-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-group,
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+  }
+  
+  .search-group input,
+  .filter-group select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .search-group input:focus,
+  .filter-group select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .icon {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .count-label {
+    font-weight: bold;
+    color: #444;
+    white-space: nowrap;
+  }
+  
+  /* ===== الجدول ===== */
+  .order-tracking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .order-tracking-table thead {
+    background-color: #f7f7f7;
+  }
+  
+  .order-tracking-table th,
+  .order-tracking-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* ===== الحالات ===== */
+  .status-cell {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .status-cell svg {
+    font-size: 16px;
+  }
+  
+  .in-progress {
+    color: #f0ad4e;
+  }
+  
+  .completed {
+    color: #28a745;
+  }
+  
+  .shipped {
+    color: #007bff;
+  }
+  
+  .no-results {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 30px;
+  }
+  
+  /* ===== استجابة للشاشات الصغيرة ===== */
+  @media (max-width: 600px) {
+    .tracking-controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-group,
+    .filter-group {
+      width: 100%;
+    }
+  
+    .count-label {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .order-tracking-title {
+      font-size: 22px;
+    }
+  }
+  
+  body.dark-mode .order-tracking-container {
+    background-color: #1f1f1f;
+    color: #f9f9f9;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-mode .order-tracking-title {
+    color: #ffffff;
+  }
+  
+  /* ===== أدوات البحث والتصفية ===== */
+  body.dark-mode .search-group input,
+  body.dark-mode .filter-group select {
+    background-color: #2c2c2c;
+    color: #f9f9f9;
+    border: 1px solid #444;
+  }
+  
+  body.dark-mode .search-group input:focus,
+  body.dark-mode .filter-group select:focus {
+    border-color: #4da3ff;
+  }
+  
+  body.dark-mode .icon {
+    color: #ccc;
+  }
+  
+  body.dark-mode .count-label {
+    color: #ddd;
+  }
+  
+  /* ===== الجدول ===== */
+  body.dark-mode .order-tracking-table thead {
+    background-color: #333;
+  }
+  
+  body.dark-mode .order-tracking-table th,
+  body.dark-mode .order-tracking-table td {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    border-bottom: 1px solid #444;
+  }
+  
+  /* ===== الحالات ===== */
+  body.dark-mode .status-cell {
+    color: inherit;
+  }
+  
+  body.dark-mode .in-progress {
+    color: #ffc107;
+  }
+  
+  body.dark-mode .completed {
+    color: #28a745;
+  }
+  
+  body.dark-mode .shipped {
+    color: #66bfff;
+  }
+  
+  body.dark-mode .no-results {
+    color: #bbb;
+  }

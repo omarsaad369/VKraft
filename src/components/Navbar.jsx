@@ -173,6 +173,9 @@ const Navbar = () => {
               <Link to="/admin/users" className="admin-link" onClick={() => setDropdownOpen(false)}>
                 👥 Manage Users
               </Link>
+              <Link to="/order-tracking" className="admin-link" onClick={() => setDropdownOpen(false)}>
+                   OrderTracking
+              </Link>
               <Link to="/admin/settings" className="admin-link" onClick={() => setDropdownOpen(false)}>
                 ⚙️ Settings
               </Link>
