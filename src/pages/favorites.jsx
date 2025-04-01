@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/slices/cartSlice";
-import "../styles/Favorites.css";
+import "../styles/favorites.css";
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
