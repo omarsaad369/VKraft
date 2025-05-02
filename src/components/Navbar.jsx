@@ -19,7 +19,7 @@ const Navbar = () => {
   const menuRef = useRef(null);
   
 
-  // مراقبة حالة المستخدم
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -43,33 +43,33 @@ const Navbar = () => {
     };
   }, []);
 
-  // تسجيل الخروج
+
   const handleSignOut = async () => {
     await signOut(auth);
     navigate("/signin");
   };
 
-  // التحقق من الوصول للصفحات المحمية
+
   const handleProtectedRoute = (path) => {
     user ? navigate(path) : navigate("/signin");
   };
 
-  // البحث
+
   const handleSearch = (event) => {
     if (searchQuery.trim()) {
       navigate(`/search?query=${searchQuery}`);
       setDropdownOpen(false);
     }
-    event.preventDefault(); // منع إغلاق القائمة عند الضغط على زر البحث
+    event.preventDefault();
   };
 
-  // إغلاق القائمة بعد الانتقال
+
   const handleLinkClick = (path) => {
     navigate(path);
-    setDropdownOpen(false); // إغلاق القائمة بعد الانتقال
+    setDropdownOpen(false);
   };
 
-  // تبديل الوضع الليلي
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
@@ -84,19 +84,19 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* الشعار */}
+      {}
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="Logo" className="logo-img" />
         </Link>
       </div>
 
-      {/* مربع البحث */}
+      {}
       <div className="search-container">
         <input
           type="text"
           className="search-input"
-          placeholder="ابحث هنا..."
+          placeholder=" search here..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSearch(e)}
@@ -106,13 +106,13 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* 🔔 زر الإشعارات */}
+      {}
       <div className="noti" style={{ marginLeft: "15px" }} onClick={() => navigate("/notifications")}>
         <NotificationsBell count={unreadCount} />
       </div>
 
 
-      {/* قائمة المستخدم */}
+      {}
       <ul ref={menuRef} className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <li><button className="btn-link" onClick={() => handleProtectedRoute("/sell")}>Sell Online</button></li>
         <li><button className="btn-link" onClick={() => handleProtectedRoute("/order")}>Order for Yourself</button></li>
@@ -136,12 +136,12 @@ const Navbar = () => {
         
       </ul>
       
-      {/* قائمة الهامبورغر */}
+      {}
       <div className="hamburger-menu" onClick={() => setDropdownOpen(!dropdownOpen)}>
         <FaBars className="menu-icon" /> <span>Categories</span>
         <span onClick={() => setDropdownOpen(!dropdownOpen)} className="dropdown-toggle"></span>
         <ul ref={menuRef} className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-          {/* روابط الأقسام */}
+          {}
           <Link to="/3d-printing" className="admin-link1" onClick={() => handleLinkClick('/3d-printing')}>
             🖨️ 3D Printing
           </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
             🔒 PrivacyPolicy
           </Link>
 
-          {/* روابط لوحة التحكم فقط إذا كان المستخدم مدير */}
+          {}
           {user && user.email === "omarsaad01007342123@gmail.com" && (
             <div className="admin-dropdown">
               <Link to="/admin" className="admin-link" onClick={() => setDropdownOpen(false)}>
@@ -182,7 +182,7 @@ const Navbar = () => {
             </div>
           )}
 
-          {/* زر التبديل بين الوضعين داخل القائمة */}
+          {}
           <li>
             <button onClick={toggleDarkMode} className="dark-mode-toggle">
               {darkMode ? <FaSun /> : <FaMoon />}

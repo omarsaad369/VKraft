@@ -8,42 +8,42 @@ const Help = () => {
       <header className="help-header">
         <FaQuestionCircle className="help-icon" />
         <h1>Help & Support Center</h1>
-        <p>مرحبًا بك في مركز الدعم الخاص بـ VKraft – نساعدك في كل خطوة!</p>
+        <p>Welcome to VKraft’s support center – we're here to assist you every step of the way!</p>
       </header>
 
       <section className="faq-section">
-        <h2>الأسئلة الشائعة</h2>
+        <h2>Frequently Asked Questions</h2>
         <div className="faq-grid">
           <div className="faq-item">
-            <h3>📌 كيف يمكنني تقديم طلب؟</h3>
-            <p>توجه إلى قسم المنتجات، اختر ما يعجبك، ثم اضغط على "Customize" أو "Add to Cart" واستكمل خطوات الطلب بسهولة.</p>
+            <h3>📌 How can I place an order?</h3>
+            <p>Go to the Products section, choose what you like, then click "Customize" or "Add to Cart" and follow the checkout steps easily.</p>
           </div>
           <div className="faq-item">
-            <h3>💳 ما هي طرق الدفع المتاحة؟</h3>
-            <p>نوفر لك خيارات متعددة: الدفع عند الاستلام، التحويل البنكي، والدفع الإلكتروني عبر البطاقات.</p>
+            <h3>💳 What payment methods are available?</h3>
+            <p>We offer multiple options: Cash on Delivery, Bank Transfer, and online payment via cards.</p>
           </div>
           <div className="faq-item">
-            <h3>🚚 كيف أتتبع طلبي؟</h3>
-            <p>بعد تأكيد الطلب، ستحصل على رقم تتبع داخل حسابك في صفحة "طلباتك".</p>
+            <h3>🚚 How do I track my order?</h3>
+            <p>Once confirmed, you will receive a tracking number inside your account under "My Orders".</p>
           </div>
           <div className="faq-item">
-            <h3>✏️ هل يمكن تعديل الطلب بعد إرساله؟</h3>
-            <p>نعم، إذا لم تتم معالجته بعد. راسلنا مباشرة بأسرع وقت ممكن.</p>
+            <h3>✏️ Can I modify my order after submitting?</h3>
+            <p>Yes, as long as it's not yet processed. Contact us immediately for assistance.</p>
           </div>
           <div className="faq-item">
-            <h3>📦 كم يستغرق التوصيل؟</h3>
-            <p>مدة التوصيل عادة من 2 إلى 5 أيام عمل حسب منطقتك.</p>
+            <h3>📦 How long does delivery take?</h3>
+            <p>Delivery usually takes between 2 to 5 business days depending on your location.</p>
           </div>
           <div className="faq-item">
-            <h3>🧵 هل يمكنني تخصيص المقاسات والألوان؟</h3>
-            <p>بالطبع! من خلال صفحة التخصيص يمكنك اختيار الألوان والمقاس المناسب أو إدخال مقاس مخصص.</p>
+            <h3>🧵 Can I customize sizes and colors?</h3>
+            <p>Absolutely! On the customization page, you can choose preferred colors and sizes or enter custom measurements.</p>
           </div>
         </div>
       </section>
 
       <section className="contact-section">
-        <h2>📬 تواصل معنا</h2>
-        <p>إذا لم تجد إجابتك، يمكنك مراسلتنا عبر الطرق التالية:</p>
+        <h2>📬 Contact Us</h2>
+        <p>If you couldn't find your answer, feel free to reach us through:</p>
         <div className="contact-info">
           <p><FaEnvelope /> TeamLeader@vkraft.com</p>
           <p><FaPhoneAlt /> +20 01007342123</p>
@@ -51,17 +51,17 @@ const Help = () => {
           <p><FaTelegramPlane /> Telegram: @VKraftSupport</p>
         </div>
         <div className="support-tips">
-          <h4>نصائح سريعة:</h4>
+          <h4>Quick Tips:</h4>
           <ul>
-            <li>📸 أرسل لقطة شاشة عند وجود مشكلة.</li>
-            <li>⏱ الدعم متاح من 9 صباحًا حتى 6 مساءً يوميًا.</li>
-            <li>🧾 رقم الطلب يساعدنا في خدمتك بشكل أسرع.</li>
+            <li>📸 Send a screenshot if you're facing an issue.</li>
+            <li>⏱ Support is available daily from 9:00 AM to 6:00 PM.</li>
+            <li>🧾 Providing your order number helps us assist you faster.</li>
           </ul>
         </div>
       </section>
 
       <footer className="help-footer">
-        <p>شكراً لاختيارك VKraft – راحتك وسعادتك أولويتنا.</p>
+        <p>Thank you for choosing VKraft – your comfort and happiness are our top priorities.</p>
       </footer>
     </div>
   );

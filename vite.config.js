@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     hmr: {
-      overlay: false, // ✅ يمنع ظهور الخطأ في المتصفح
+      overlay: false, 
     },
   },
 });

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/NotificationsBell.css'; // نضيف ملف CSS منفصل للستايل
+import '../styles/NotificationsBell.css'; 
 export default function NotificationsBell({ onClick, count }) {
   const [shake, setShake] = useState(false);
 
-  // 🔁 اهتزاز الجرس عند وصول إشعار جديد
+
   useEffect(() => {
     if (count > 0) {
       setShake(true);
-      const timeout = setTimeout(() => setShake(false), 600); // مدة الاهتزاز
+      const timeout = setTimeout(() => setShake(false), 600);
       return () => clearTimeout(timeout);
     }
   }, [count]);

@@ -35,7 +35,7 @@ export default function NotificationItem({ notification, onClick, onDelete }) {
         <button
           className="delete-notification-btn"
           onClick={(e) => {
-            e.stopPropagation(); // لتجنب تفعيل onClick عند الضغط على زر الحذف
+            e.stopPropagation(); 
             onDelete();
           }}
         >

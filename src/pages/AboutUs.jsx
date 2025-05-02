@@ -5,13 +5,13 @@ import aboutImage from "../assets/images/image-removebg-preview (2).png";
 const AboutUs = () => {
   return (
     <div className="about-us-container">
-      {/* Header */}
+      {}
       <section className="about-us-header">
         <h1>About Us</h1>
         <p>VKraft is your creative corner for personalized clothing that tells your story.</p>
       </section>
 
-      {/* Our Story */}
+      {}
       <section className="about-us-content">
         <div className="about-us-text">
           <h2>Our Story</h2>
@@ -22,13 +22,13 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mission */}
+      {}
       <section className="about-us-mission">
         <h2>Our Mission</h2>
         <p>To create customizable fashion that reflects who you are — with quality, comfort, and a touch of imagination.</p>
       </section>
 
-      {/* Values */}
+      {}
       <section className="about-us-values">
         <h2>Our Core Values</h2>
         <div className="values-grid">
@@ -51,7 +51,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Timeline */}
+      {}
       <section className="about-us-timeline">
         <h2>Our Journey</h2>
         <ul className="timeline">
@@ -63,7 +63,7 @@ const AboutUs = () => {
         </ul>
       </section>
 
-      {/* Testimonials */}
+      {}
 <section className="about-us-testimonials">
   <h2>Customer Testimonials</h2>
   <div className="testimonial-boxes">
@@ -110,7 +110,7 @@ const AboutUs = () => {
   </div>
 </section>
 
-      {/* Team Section */}
+      {}
       <section className="about-us-team">
         <h2>Meet Our Team</h2>
         <div className="team-grid">
@@ -148,7 +148,7 @@ const AboutUs = () => {
 </div>
       </section>
 
-      {/* Footer */}
+      {}
       <section className="about-us-footer">
         <p>&copy; 2025 VKraft. All rights reserved.</p>
       </section>

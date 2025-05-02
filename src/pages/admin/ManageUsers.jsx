@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteUser } from "../../redux/slices/userSlice";
-import { FaTrashAlt, FaUser, FaSearch, FaUsers } from "react-icons/fa";
+import { FaTrashAlt, FaUser, FaUsers } from "react-icons/fa";
 import "../../styles/ManageUsers.css";
 
 const ManageUsers = () => {
   const dispatch = useDispatch();
-  const users = useSelector((state) => state.users.users); // ✅ هذا هو الصحيح
+  const users = useSelector((state) => state.users.users);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
@@ -35,7 +35,7 @@ const ManageUsers = () => {
   }, [search, users]);
 
   const handleDelete = (userId) => {
-    if (window.confirm("❌ هل تريد حذف هذا المستخدم؟")) {
+    if (window.confirm("Are you sure you want to delete this user?")) {
       dispatch(deleteUser(userId));
     }
   };
@@ -57,22 +57,22 @@ const ManageUsers = () => {
   return (
     <div className="manage-users-container">
       <h2 className="page-title">
-        <FaUsers /> إدارة المستخدمين
+        <FaUsers /> Manage Users
       </h2>
 
       <div className="user-tools">
         <input
           type="text"
-          placeholder="🔍 بحث بالاسم أو الإيميل..."
+          placeholder="Search by name or email..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="search-input"
         />
-        <span className="total-count">👥 الإجمالي: {filteredUsers.length}</span>
+        <span className="total-count">Total: {filteredUsers.length}</span>
       </div>
 
       {filteredUsers.length === 0 ? (
-        <p className="no-users">🚫 لا يوجد مستخدمون</p>
+        <p className="no-users">No users found.</p>
       ) : (
         <div className="user-list">
           {filteredUsers.map((user) => (
@@ -88,7 +88,7 @@ const ManageUsers = () => {
                 className="delete-btn"
                 onClick={() => handleDelete(user.id)}
               >
-                <FaTrashAlt /> حذف
+                <FaTrashAlt /> Delete
               </button>
             </div>
           ))}

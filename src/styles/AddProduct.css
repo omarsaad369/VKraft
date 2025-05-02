@@ -1,4 +1,4 @@
-/* ✅ الحاوية العامة */
+
 .add-product-container {
     width: 100%;
     max-width: 100%;
@@ -26,7 +26,7 @@
     letter-spacing: 1px;
   }
   
-  /* ✅ نموذج بكامل العرض */
+  
   .add-product-form {
     max-width: 900px;
     margin: 0 auto;
@@ -72,7 +72,7 @@
     outline: none;
   }
   
-  /* ✅ زر الحفظ */
+  
   .submit-btn {
     background-color: #28a745;
     color: white;
@@ -89,7 +89,7 @@
     background-color: #218838;
   }
   
-  /* ✅ للأجهزة الصغيرة */
+  
   @media (max-width: 768px) {
     .add-product-form {
       padding: 20px;

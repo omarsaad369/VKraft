@@ -1,4 +1,4 @@
-/* ✅ الحاوية العامة */
+
 .manage-users-container {
   max-width: 1000px;
   margin: 40px auto;
@@ -17,7 +17,7 @@
   margin-bottom: 20px;
 }
 
-/* ✅ أدوات البحث */
+
 .user-tools {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@
   color: #555;
 }
 
-/* ✅ قائمة المستخدمين */
+
 .user-list {
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@
   color: #666;
 }
 
-/* ✅ زر الحذف */
+
 .delete-btn {
   background-color: #dc3545;
   color: white;
@@ -112,7 +112,7 @@
   background-color: #c82333;
 }
 
-/* ✅ عند عدم وجود مستخدمين */
+
 .no-users {
   text-align: center;
   font-size: 16px;
@@ -120,7 +120,7 @@
   margin-top: 40px;
 }
 
-/* ✅ لودر ثلاثي الأبعاد */
+
 .pyramid-loader {
   display: flex;
   justify-content: center;
@@ -165,7 +165,7 @@
   100% { transform: rotateY(360deg); }
 }
 
-/* ✅ استجابة للجوال */
+
 @media (max-width: 600px) {
   .user-tools {
     flex-direction: column;

@@ -74,7 +74,7 @@
   flex-wrap: wrap;
 }
 
-/* أزرار العمليات */
+
 
 .edit-btn,
 .delete-btn {
@@ -92,7 +92,7 @@
   transition: 0.3s ease;
 }
 
-/* تعديل */
+
 .edit-btn {
   background-color: #ffc107;
   color: #333;
@@ -102,7 +102,7 @@
   background-color: #e0a800;
 }
 
-/* حذف */
+
 .delete-btn {
   background-color: #dc3545;
   color: white;
@@ -121,7 +121,7 @@
   }
 }
 
-/* Loader animation */
+
 .pyramid-loader {
   display: flex;
   justify-content: center;
@@ -227,7 +227,7 @@ body.dark-mode .delete-btn:hover {
   background-color: #c82333;
 }
 
-/* Loader in dark mode */
+
 body.dark-mode .pyramid-loader .wrapper .side {
   background: conic-gradient(#007bff, #0056b3, #007bff);
   border: 1px solid #666;

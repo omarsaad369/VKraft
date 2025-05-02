@@ -1,4 +1,4 @@
-/* Help.css – النسخة المحسّنة بالألوان */
+
 
 .help-container {
     direction: rtl;
@@ -10,7 +10,7 @@
     margin: auto;
   }
   
-  /* Header */
+  
   .help-header {
     text-align: center;
     margin-bottom: 40px;
@@ -18,7 +18,7 @@
   
   .help-header h1 {
     font-size: 2.4rem;
-    color: #1a2e4b; /* أزرق غامق */
+    color: #1a2e4b; 
     margin: 10px 0;
   }
   
@@ -29,10 +29,10 @@
   
   .help-icon {
     font-size: 3rem;
-    color: #2ca6a4; /* تركوازي أنيق */
+    color: #2ca6a4; 
   }
   
-  /* FAQ Section */
+  
   .faq-section {
     background-color: #ffffff;
     border-radius: 12px;
@@ -79,7 +79,7 @@
     line-height: 1.6;
   }
   
-  /* Contact Section */
+  
   .contact-section {
     background-color: #ffffff;
     padding: 30px;
@@ -152,7 +152,7 @@
     right: 0;
   }
   
-  /* Footer */
+  
   .help-footer {
     text-align: center;
     margin-top: 50px;
@@ -162,7 +162,7 @@
     border-top: 1px solid #ccc;
   }
   
-  /* Responsive */
+  
   @media (max-width: 768px) {
     .faq-grid {
       grid-template-columns: 1fr;
@@ -186,7 +186,7 @@
     }
   }
   
-  /* 🌙 الوضع الليلي لمكون Help */
+  
 body.dark-mode .help-container {
     background-color: #121212;
     color: #f1f1f1;
@@ -248,7 +248,7 @@ body.dark-mode .help-container {
     color: #aaaaaa;
   }
   
-  /* زر التبديل */
+  
   .dark-mode-toggle {
     background-color: #444;
     color: #fff;

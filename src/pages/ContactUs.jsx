@@ -19,13 +19,13 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us-container">
-      {/* Header */}
+      {}
       <section className="contact-us-header">
         <h1>Contact Us</h1>
         <p>We’d love to hear from you. Whether you have a question or just want to say hello 👋</p>
       </section>
 
-      {/* Contact Info */}
+      {}
       <section className="contact-info">
         <div className="contact-info-item">
           <FaPhoneAlt />
@@ -50,7 +50,7 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {}
       <section className="contact-form">
         <h2>Send Us a Message</h2>
         {formSubmitted ? (
@@ -86,7 +86,7 @@ const ContactUs = () => {
         )}
       </section>
 
-      {/* Social Media */}
+      {}
       <section className="contact-social">
         <h3>Follow us</h3>
         <div className="social-icons">

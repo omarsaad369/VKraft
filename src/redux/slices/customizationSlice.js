@@ -1,7 +1,7 @@
-// استيراد createSlice من Redux Toolkit لإنشاء شريحة تخصيص المنتج
+
 import { createSlice } from "@reduxjs/toolkit";
 
-// ✅ الحالة الابتدائية للتخصيص
+
 const initialState = {
   color: "#000000",  // اللون الافتراضي (أسود) - يجب أن يكون بتنسيق HEX
   text: "",          // النص المخصص، يبدأ بقيمة فارغة
@@ -13,7 +13,7 @@ const initialState = {
   productType: "T-Shirt", // نوع المنتج الافتراضي
 };
 
-// ✅ إنشاء شريحة Redux لإدارة حالة التخصيص
+
 const customizationSlice = createSlice({
   name: "customization", // اسم الشريحة في Redux Store
   initialState, // تحديد الحالة الابتدائية
@@ -45,7 +45,7 @@ const customizationSlice = createSlice({
   },
 });
 
-// ✅ تصدير الإجراءات (Actions) لاستخدامها في المكونات الأخرى
+
 export const { 
   setColor, 
   setText, 
@@ -57,5 +57,5 @@ export const {
   setProductType 
 } = customizationSlice.actions;
 
-// ✅ تصدير المخفض (Reducer) لدمجه في Redux Store
+
 export default customizationSlice.reducer;

@@ -52,7 +52,7 @@
   justify-content: center;
   margin-bottom: 15px;
   position: relative;
-  background-image: url("/images/shirt-outline.png"); /* ← صورة رمزية اختياري */
+  background-image: url("/images/shirt-outline.png"); 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,7 +179,7 @@
   background-color: #218838;
 }
 
-/* استجابة للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .cart-container {
     padding: 20px;
@@ -195,14 +195,14 @@
   }
 }
 
-/* cart-container */
+
 body.dark-mode .cart-container h1 {
-  color: #ffffff; /* أبيض بالكامل */
+  color: #ffffff; 
 }
 
-/* الوضع الليلي - رقم الكمية */
+
 body.dark-mode .quantity-controls span {
-  color: #fff; /* اجعل النص أبيض */
+  color: #fff; 
 }
 
 body.dark-mode .quantity-controls span {

@@ -27,16 +27,15 @@ function UploadImage() {
       const imageUrl = data.secure_url;
       setUrl(imageUrl);
 
-      // ✅ تخزين الرابط في Firestore
       await addDoc(collection(db, "uploads"), {
         imageUrl,
         createdAt: Timestamp.now(),
       });
 
-      alert("📥 تم رفع الصورة وتخزين الرابط في Firestore");
+      alert("Image uploaded and URL stored in Firestore");
 
     } catch (err) {
-      alert("فشل في الرفع أو التخزين: " + err.message);
+      alert("Upload or storage failed: " + err.message);
     } finally {
       setUploading(false);
     }
@@ -44,12 +43,12 @@ function UploadImage() {
 
   return (
     <div className="page" style={{ padding: '20px', direction: 'rtl' }}>
-      <h2>📸 رفع صورة وتخزينها في Firestore</h2>
+      <h2>Upload Image and Store in Firestore</h2>
       <input type="file" accept="image/*" onChange={handleUpload} />
-      {uploading && <p>🚀 جاري رفع الصورة...</p>}
+      {uploading && <p>Uploading image...</p>}
       {url && (
         <div style={{ marginTop: '20px' }}>
-          <p>✅ رابط الصورة:</p>
+          <p>Image URL:</p>
           <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
           <br />
           <img src={url} alt="Uploaded" style={{ maxWidth: '300px', marginTop: '10px' }} />

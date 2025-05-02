@@ -23,7 +23,7 @@ const Favorites = () => {
   };
 
   const clearFavorites = () => {
-    if (window.confirm("⚠️ هل تريد حذف جميع المنتجات من المفضلة؟")) {
+    if (window.confirm("⚠️ Are you sure you want to remove all items from favorites?")) {
       setFavorites([]);
       localStorage.removeItem("favorites");
     }
@@ -31,17 +31,17 @@ const Favorites = () => {
 
   return (
     <div className="favorites-page">
-      <h1>❤️ منتجاتي المفضلة</h1>
+      <h1>❤️ My Favorite Products</h1>
 
       {favorites.length > 0 && (
         <button className="clear-favorites-btn" onClick={clearFavorites}>
-          🧹 إفراغ المفضلة
+          🧹 Clear Favorites
         </button>
       )}
 
       <div className="favorites-list">
         {favorites.length === 0 ? (
-          <p className="no-favorites">لا توجد منتجات مفضلة حتى الآن.</p>
+          <p className="no-favorites">You have no favorite products yet.</p>
         ) : (
           favorites.map((product) => (
             <div key={product.id} className="favorite-item">
@@ -49,14 +49,14 @@ const Favorites = () => {
               <div className="favorite-item-details">
                 <h3>{product.name}</h3>
                 {product.price && (
-                  <p className="favorite-price">💰 السعر: {product.price} جنيه</p>
+                  <p className="favorite-price">💰 Price: {product.price} EGP</p>
                 )}
                 <div className="favorite-actions">
                   <button onClick={() => handleAddToCart(product)} className="add-to-cart-btn">
-                    🛒 أضف إلى السلة
+                    🛒 Add to Cart
                   </button>
                   <button onClick={() => removeFromFavorites(product.id)} className="remove-btn">
-                    ❌ إزالة من المفضلة
+                    ❌ Remove from Favorites
                   </button>
                 </div>
               </div>

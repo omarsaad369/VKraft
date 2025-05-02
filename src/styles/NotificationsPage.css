@@ -1,4 +1,4 @@
-/* NotificationsPage.css */
+
 
 .notifications-page {
   background-color: #f5f6f8;
@@ -100,7 +100,7 @@
   }
 }
 
-/* 🌙 الوضع الليلي لصفحة الإشعارات */
+
 
 body.dark-mode .notifications-page {
   background-color: #121212;

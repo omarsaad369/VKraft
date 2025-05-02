@@ -1,4 +1,4 @@
-/* SellOnline.css */
+
 
 .sell-online-container {
     font-family: Arial, sans-serif;
@@ -55,7 +55,7 @@
     outline: none;
   }
   
-  /* تخصيص الزر */
+  
   .add-product-form button {
     background-color: #28a745;
     color: white;
@@ -140,14 +140,14 @@
   
   .product-list {
     margin-top: 40px;
-    text-align: center; /* جعل النص في المنتصف */
+    text-align: center; 
   }
   
   .product-list p {
     font-size: 1.2rem;
     color: #555;
     margin-top: 20px;
-    text-align: center; /* تأكيد المحاذاة في المنتصف */
+    text-align: center; 
   }
   
   input {

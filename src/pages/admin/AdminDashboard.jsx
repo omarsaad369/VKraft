@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/AdminDashboard.css"; // استيراد التنسيقات
-import { FaChartLine, FaBoxes, FaUsers, FaCog } from "react-icons/fa"; // أيقونات إضافية
+import "../../styles/AdminDashboard.css";
+import { FaChartLine, FaBoxes, FaUsers, FaCog } from "react-icons/fa"; 
 
 const AdminDashboard = () => {
   return (
     <div className="admin-container">
-      {/* Sidebar */}
+      {}
       <aside className="admin-sidebar">
         <h2>Admin Panel</h2>
         <ul>
@@ -18,11 +18,11 @@ const AdminDashboard = () => {
         </ul>
       </aside>
 
-      {/* Main Content */}
+      {}
       <main className="admin-main">
         <h1>Welcome to Admin Dashboard</h1>
 
-        {/* Stats Boxes */}
+        {}
         <div className="admin-stats">
           <div className="stat-box">
             <h3>🛒 Orders</h3>
@@ -38,7 +38,7 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* Sections */}
+        {}
         <section className="admin-sections">
           <div className="section-box">
             <h3>Quick Links</h3>

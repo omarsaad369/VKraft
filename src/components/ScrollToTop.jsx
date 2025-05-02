@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import "../styles/scrollToTop.css"; // ملف CSS لتنسيق الزر
-
+import "../styles/scrollToTop.css"; 
 const ScrollToTop = () => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setShowButton(window.scrollY > 300); // إظهار الزر عند التمرير 300 بكسل
+      setShowButton(window.scrollY > 300);  
     });
   }, []);
 

@@ -1,86 +1,86 @@
-/* تنسيق الحاوية الرئيسية التي تحتوي على المنتجات */
+
 .home-container {
-  text-align: center; /* يجعل النصوص والعناصر داخل الصفحة في المنتصف */
-  padding: 20px; /* يضيف مسافة حول المحتوى لجعل التصميم أكثر اتساعًا */
+  text-align: center; 
+  padding: 20px; 
 }
 
-/* تنسيق شبكة المنتجات لضمان ترتيبها بشكل منظم */
+
 .products-grid {
-  display: flex; /* يستخدم نظام Flexbox لترتيب المنتجات في صف أفقي */
-  flex-wrap: wrap; /* يسمح للمنتجات بالانتقال إلى سطر جديد عند الحاجة (في الشاشات الصغيرة) */
-  justify-content: center; /* يجعل المنتجات تصطف في منتصف الصفحة */
-  gap: 20px; /* يضيف مسافة بين المنتجات لضمان تصميم متناسق */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
 }
 
-/* تنسيق الحاوية التي تحتوي على المنتجات */
+
 .product-container {
-display: flex; /* استخدام Flexbox */
-justify-content: space-between; /* توزيع المساحة بين المنتجات */
-gap: 20px; /* المسافة بين المنتجات */
-flex-wrap: wrap; /* السماح بانتقال العناصر إلى السطر التالي إذا لزم الأمر */
+display: flex; 
+justify-content: space-between; 
+gap: 20px; 
+flex-wrap: wrap; 
 }
 
-/* تنسيق البطاقة الخاصة بكل منتج */
+
 .product-card {
-width: 220px; /* عرض ثابت لكل منتج */
-height: 350px; /* ارتفاع ثابت لكل منتج */
-background-color: #f8f8f8; /* خلفية فاتحة للمنتج */
-border-radius: 10px; /* حواف مستديرة */
-padding: 20px; /* إضافة مسافة داخلية للمنتج */
-text-align: center; /* محاذاة النص في المنتصف */
-display: flex; /* استخدام Flexbox لتنظيم المحتوى داخل البطاقة */
-flex-direction: column; /* وضع النصوص داخل كل منتج بشكل عمودي */
-justify-content: space-between; /* توزيع المسافة بين الصورة والنص */
+width: 220px; 
+height: 350px; 
+background-color: #f8f8f8; 
+border-radius: 10px; 
+padding: 20px; 
+text-align: center; 
+display: flex; 
+flex-direction: column; 
+justify-content: space-between; 
 }
 
-/* تنسيق الصورة داخل المنتج */
+
 .product-card img {
-width: 100%; /* عرض الصورة كامل */
-height: 200px; /* تحديد ارتفاع ثابت للصورة */
-object-fit: cover; /* الحفاظ على الأبعاد بالنسبة للصورة */
-border-radius: 5px; /* إضافة حواف مستديرة للصورة */
+width: 100%; 
+height: 200px; 
+object-fit: cover; 
+border-radius: 5px; 
 }
 
-/* تنسيق النصوص */
+
 .product-card h3 {
-font-size: 18px; /* تحديد حجم خط العنوان */
-margin: 10px 0; /* إضافة مسافة حول العنوان */
+font-size: 18px; 
+margin: 10px 0; 
 }
 
 .product-card p {
-font-size: 16px; /* تحديد حجم خط الوصف */
-margin: 10px 0; /* إضافة مسافة حول الوصف */
+font-size: 16px; 
+margin: 10px 0; 
 }
 
-/* تنسيق الأزرار */
+
 .product-card button {
-padding: 10px; /* إضافة مسافة داخلية للزر */
-background-color: #ff5722; /* تعيين خلفية برتقالية للزر */
-border: none; /* إزالة الحدود */
-color: white; /* تعيين اللون الأبيض للنص داخل الزر */
-font-size: 14px; /* تحديد حجم خط الزر */
-cursor: pointer; /* تغيير المؤشر إلى يد عند التمرير على الزر */
-border-radius: 5px; /* حواف مستديرة للزر */
+padding: 10px; 
+background-color: #ff5722; 
+border: none; 
+color: white; 
+font-size: 14px; 
+cursor: pointer; 
+border-radius: 5px; 
 }
 
-/* تأثير hover على الزر */
+
 .product-card button:hover {
-background-color: #e64a19; /* تغيير اللون إلى برتقالي غامق عند التمرير */
+background-color: #e64a19; 
 }
 
-/* تنسيق السعر */
+
 .product-card .price {
-font-size: 16px; /* حجم الخط للسعر */
-font-weight: bold; /* جعل السعر سميكًا */
-margin-bottom: 15px; /* إضافة مسافة أسفل السعر */
+font-size: 16px; 
+font-weight: bold; 
+margin-bottom: 15px; 
 }
 
 .product-card .product-name {
-font-size: 16px; /* حجم الخط لاسم المنتج */
-font-weight: bold; /* جعل اسم المنتج سميكًا */
+font-size: 16px; 
+font-weight: bold; 
 }
 
-/* الوضع الليلي - عنوان الصفحة */
+
 body.dark-mode .home-container h1 {
-  color: #ffffff; /* أو أي لون فاتح مثل #f1f1f1 */
+  color: #ffffff; 
 }

@@ -1,4 +1,3 @@
-// src/pages/SearchResultsPage.jsx
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -15,14 +14,14 @@ const SearchResultsPage = () => {
 
   return (
     <div className="search-results-container">
-      <h1 className="search-title">نتائج البحث عن: "{query}"</h1>
+      <h1 className="search-title">Search results for: "{query}"</h1>
       <div className="products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))
         ) : (
-          <p className="no-results-message">لا توجد منتجات مطابقة.</p>
+          <p className="no-results-message">No matching products found.</p>
         )}
       </div>
     </div>

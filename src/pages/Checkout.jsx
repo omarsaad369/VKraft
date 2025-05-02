@@ -36,7 +36,7 @@ const Checkout = () => {
 
   const handleConfirmOrder = () => {
     if (!shippingInfo.name || !shippingInfo.email || !shippingInfo.address || !shippingInfo.phone) {
-      alert("⚠️ يرجى ملء جميع بيانات الشحن!");
+      alert("⚠️ Please fill in all required shipping information!");
       return;
     }
 
@@ -52,78 +52,73 @@ const Checkout = () => {
   if (orderConfirmed) {
     return (
       <div className="success-container">
-        <h1>🎉 تم تأكيد طلبك بنجاح!</h1>
-        <p>📦 سيتم تجهيز الطلب وإرساله قريبًا.</p>
-        <button onClick={() => navigate("/")} className="go-home-btn">🏠 العودة للصفحة الرئيسية</button>
+        <h1>🎉 Your order has been successfully confirmed!</h1>
+        <p>📦 It will be prepared and shipped soon.</p>
+        <button onClick={() => navigate("/")} className="go-home-btn">🏠 Return to Homepage</button>
       </div>
     );
   }
 
   return (
     <div className="checkout-container">
-      <h1>✅ إتمام الطلب</h1>
+      <h1>✅ Complete Your Order</h1>
 
       <div className="shipping-form">
-        <label>📛 الاسم الكامل:</label>
+        <label>📛 Full Name:</label>
         <input type="text" name="name" value={shippingInfo.name} onChange={handleInputChange} required />
 
-        <label>📧 البريد الإلكتروني:</label>
+        <label>📧 Email:</label>
         <input type="email" name="email" value={shippingInfo.email} onChange={handleInputChange} required />
 
-        <label>🏠 العنوان:</label>
+        <label>🏠 Address:</label>
         <input type="text" name="address" value={shippingInfo.address} onChange={handleInputChange} required />
 
-        <label>🏙️ المدينة:</label>
+        <label>🏙️ City:</label>
         <input type="text" name="city" value={shippingInfo.city} onChange={handleInputChange} required />
 
-        <label>📞 رقم الهاتف:</label>
+        <label>📞 Phone Number:</label>
         <input type="tel" name="phone" value={shippingInfo.phone} onChange={handleInputChange} required />
 
-        {/* 📌 اختيار طريقة الدفع */}
-        <label>💳 طريقة الدفع:</label>
+        <label>💳 Payment Method:</label>
         <select name="paymentMethod" value={shippingInfo.paymentMethod} onChange={handleInputChange}>
-          <option value="credit-card">💳 بطاقة ائتمان</option>
-          <option value="vodafone-cash"> فودافون كاش</option>
-          <option value="etisalat-cash"> اتصالات كاش</option>
-          <option value="orange-cash"> أورنج كاش</option>
-          <option value="cod">💵 الدفع عند الاستلام</option>
+          <option value="credit-card">💳 Credit Card</option>
+          <option value="vodafone-cash">📱 Vodafone Cash</option>
+          <option value="etisalat-cash">📱 Etisalat Cash</option>
+          <option value="orange-cash">📱 Orange Cash</option>
+          <option value="cod">💵 Cash on Delivery</option>
         </select>
 
-        {/* 📌 حقول إضافية عند اختيار بطاقة ائتمان */}
         {shippingInfo.paymentMethod === "credit-card" && (
           <>
-            <label>💳 رقم البطاقة:</label>
+            <label>💳 Card Number:</label>
             <input type="text" name="cardNumber" value={shippingInfo.cardNumber} onChange={handleInputChange} placeholder="**** **** **** ****" required />
             
-            <label>📅 تاريخ الانتهاء:</label>
+            <label>📅 Expiry Date:</label>
             <input type="text" name="expiryDate" value={shippingInfo.expiryDate} onChange={handleInputChange} placeholder="MM/YY" required />
 
-            <label>🔒 رمز CVV:</label>
+            <label>🔒 CVV:</label>
             <input type="text" name="cvv" value={shippingInfo.cvv} onChange={handleInputChange} placeholder="***" required />
           </>
         )}
 
-        {/* 📌 حقول إضافية عند اختيار المحافظ الإلكترونية */}
         {(shippingInfo.paymentMethod === "vodafone-cash" ||
           shippingInfo.paymentMethod === "etisalat-cash" ||
           shippingInfo.paymentMethod === "orange-cash") && (
           <>
-            <label>📱 رقم المحفظة:</label>
-            <input type="text" name="walletNumber" value={shippingInfo.walletNumber} onChange={handleInputChange} placeholder="رقم الموبايل المرتبط بالمحفظة" required />
+            <label>📱 Wallet Number:</label>
+            <input type="text" name="walletNumber" value={shippingInfo.walletNumber} onChange={handleInputChange} placeholder="Enter mobile wallet number" required />
           </>
         )}
 
-        {/* 📌 اختيار طريقة التوصيل */}
-        <label>🚚 طريقة التوصيل:</label>
+        <label>🚚 Shipping Method:</label>
         <select name="shippingMethod" value={shippingInfo.shippingMethod} onChange={handleInputChange}>
-          <option value="standard">🚛 شحن عادي (20 جنيه)</option>
-          <option value="express">⚡ شحن سريع (50 جنيه)</option>
+          <option value="standard">🚛 Standard Shipping (EGP 20)</option>
+          <option value="express">⚡ Express Shipping (EGP 50)</option>
         </select>
       </div>
 
-      {/* ✅ زر تأكيد الطلب */}
       <button onClick={handleConfirmOrder} className="confirm-order-btn">
-        ✅ تأكيد الطلب
+        ✅ Confirm Order
       </button>
     </div>
   );

@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // استيراد useNavigate للتنقل
+import { useNavigate } from "react-router-dom";
 import "../styles/productCard.css";
 
 const ProductCard = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const navigate = useNavigate(); // استدعاء دالة التنقل
+  const navigate = useNavigate(); 
 
-  // التحقق من المفضلات عند تحميل الصفحة
+
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     const isProductFavorite = favorites.some((favProduct) => favProduct.id === product.id);
     setIsFavorite(isProductFavorite);
   }, [product.id]);
 
-  // وظيفة لتبديل حالة المفضلة
+
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
 
-    // تخزين أو إزالة المنتج من المفضلة في LocalStorage
+
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     if (isFavorite) {
       favorites = favorites.filter((favProduct) => favProduct.id !== product.id);
@@ -28,10 +28,10 @@ const ProductCard = ({ product }) => {
   };
 
   const handleCustomize = () => {
-    // 1. حفظ صورة المنتج في localStorage مؤقتًا
+
     localStorage.setItem("customImage", product.image);
   
-    // 2. التنقل إلى صفحة التخصيص
+
     navigate("/customize");
   };
 
@@ -77,7 +77,7 @@ const ProductCard = ({ product }) => {
       </div>
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
-      {/* إضافة زر تخصيص المنتج */}
+      {}
       <button onClick={handleCustomize}>Customize Product</button>
     </div>
   );

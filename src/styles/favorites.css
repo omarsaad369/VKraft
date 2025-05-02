@@ -130,7 +130,7 @@
   background-color: #c2185b;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .favorite-actions {
     flex-direction: column;
@@ -147,7 +147,7 @@
   }
 }
 
-/* 🌙 الوضع الليلي - صفحة المفضلة */
+
 
 body.dark-mode .favorites-page {
   background-color: #1e1e1e;

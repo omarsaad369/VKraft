@@ -18,27 +18,26 @@ const AddProduct = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // هنا تقدر تضيف عملية حفظ المنتج فعليًا (API أو Redux)
-    console.log("📦 المنتج الجديد:", formData);
+    console.log("📦 New product:", formData);
 
-    alert("✅ تم حفظ المنتج بنجاح!");
+    alert("✅ Product saved successfully!");
     navigate("/admin/manage-products");
   };
 
   return (
     <div className="add-product-container">
-        <div className="header-box">
-            <h2>➕ إضافة منتج جديد</h2>
-        </div>    
+      <div className="header-box">
+        <h2>➕ Add New Product</h2>
+      </div>
 
       <form className="add-product-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">📝 الاسم:</label>
+          <label htmlFor="name">📝 Name:</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="مثلاً: تيشيرت أبيض"
+            placeholder="e.g., White T-shirt"
             value={formData.name}
             onChange={handleChange}
             required
@@ -46,7 +45,7 @@ const AddProduct = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="image">🌄 رابط الصورة:</label>
+          <label htmlFor="image">🌄 Image URL:</label>
           <input
             type="url"
             id="image"
@@ -59,21 +58,21 @@ const AddProduct = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="category">📂 التصنيف:</label>
+          <label htmlFor="category">📂 Category:</label>
           <select
             id="category"
             name="category"
             value={formData.category}
             onChange={handleChange}
           >
-            <option value="clothing">ملابس</option>
-            <option value="accessories">إكسسوارات</option>
-            <option value="3d">منتجات 3D</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+            <option value="3d">3D Products</option>
           </select>
         </div>
 
         <button type="submit" className="submit-btn">
-          ✅ حفظ المنتج
+          ✅ Save Product
         </button>
       </form>
     </div>

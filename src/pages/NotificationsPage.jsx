@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NotificationItem from '../components/NotificationItem';
 import '../styles/NotificationsPage.css';
-import defaultNotifications from "../data/notificationsData"; // ✅ استخدام البيانات من الملف
+import defaultNotifications from "../data/notificationsData";
 
 export default function NotificationsPage() {
   const [notifications, setNotifications] = useState([]);
@@ -35,7 +35,7 @@ export default function NotificationsPage() {
   };
 
   const clearAllNotifications = () => {
-    if (window.confirm("هل أنت متأكد من مسح جميع الإشعارات؟")) {
+    if (window.confirm("Are you sure you want to delete all notifications?")) {
       setNotifications([]);
       localStorage.removeItem('notifications');
     }
@@ -60,41 +60,41 @@ export default function NotificationsPage() {
   return (
     <div className="notifications-page">
       <div className="notifications-container">
-        <h2 className="notifications-title">🔔 الإشعارات</h2>
+        <h2 className="notifications-title">🔔 Notifications</h2>
 
         {notifications.length > 0 && (
           <>
             <div className="notifications-actions">
               <button className="mark-read-btn" onClick={markAllAsRead}>
-                🔘 تمييز الكل كمقروء
+                🔘 Mark All as Read
               </button>
               <button className="clear-btn" onClick={clearAllNotifications}>
-                🗑 مسح الكل
+                🗑 Clear All
               </button>
               <button className="reload-btn" onClick={reloadDefaults}>
-                ♻️ تحميل البيانات الافتراضية
+                ♻️ Load Default Notifications
               </button>
             </div>
 
             <div className="filters">
               <select value={filterType} onChange={(e) => setFilterType(e.target.value)}>
-                <option value="all">📁 كل الأنواع</option>
-                <option value="order">📦 الطلبات</option>
-                <option value="system">🛠 النظام</option>
-                <option value="offer">🎁 العروض</option>
+                <option value="all">📁 All Types</option>
+                <option value="order">📦 Orders</option>
+                <option value="system">🛠 System</option>
+                <option value="offer">🎁 Offers</option>
               </select>
 
               <select value={filterStatus} onChange={(e) => setFilterStatus(e.target.value)}>
-                <option value="all">📋 الكل</option>
-                <option value="unread">🆕 غير مقروء</option>
-                <option value="read">✅ مقروء</option>
+                <option value="all">📋 All Statuses</option>
+                <option value="unread">🆕 Unread</option>
+                <option value="read">✅ Read</option>
               </select>
             </div>
           </>
         )}
 
         {filtered.length === 0 ? (
-          <p className="no-notifications">لا توجد إشعارات.</p>
+          <p className="no-notifications">No notifications found.</p>
         ) : (
           filtered.map((notif, index) => (
             <NotificationItem

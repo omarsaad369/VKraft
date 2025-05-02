@@ -1,4 +1,4 @@
-/* 🌟 مركز التسجيل */
+
 .signup-container {
     width: 350px;
     background: white;
@@ -9,13 +9,13 @@
     margin: 50px auto;
   }
   
-  /* 🏷️ عنوان الصفحة */
+  
   .signup-container h2 {
     margin-bottom: 15px;
     font-size: 22px;
   }
   
-  /* 📝 تنسيق الحقول */
+  
   .input-group {
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
     background: transparent;
   }
   
-  /* 🔴 رسائل الخطأ */
+  
   .error {
     color: red;
     font-size: 12px;
@@ -48,7 +48,7 @@
     margin-bottom: 10px;
   }
   
-  /* 🎨 زر التسجيل */
+  
   .signup-btn {
     background: #28a745;
     color: white;

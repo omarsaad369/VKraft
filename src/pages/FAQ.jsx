@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import "../styles/faq.css"; // تأكد من إضافة ملف الـ CSS الخاص بالصفحة
+import "../styles/faq.css"; 
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle الفتح والغلق للأسئلة
+    setActiveIndex(activeIndex === index ? null : index); 
   };
 
   const faqData = [

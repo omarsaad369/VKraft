@@ -1,4 +1,4 @@
-/* الحاوية الرئيسية */
+
 .about-us-container {
   width: 85%;
   margin: 0 auto;
@@ -7,7 +7,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* رأس الصفحة */
+
 .about-us-header {
   background: linear-gradient(135deg, #007bff, #00bcd4);
   color: #fff;
@@ -27,7 +27,7 @@
   margin: 0 auto;
 }
 
-/* القصة */
+
 .about-us-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -54,7 +54,7 @@
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-/* الرسالة */
+
 .about-us-mission {
   background-color: #fff;
   padding: 40px;
@@ -75,7 +75,7 @@
   color: #333;
 }
 
-/* القيم */
+
 .about-us-values {
   padding: 60px 0;
   background-color: #f0f4f8;
@@ -112,7 +112,7 @@
   color: #444;
 }
 
-/* الخط الزمني */
+
 .about-us-timeline {
   margin: 60px 0;
   text-align: center;
@@ -146,7 +146,7 @@
   margin-right: 8px;
 }
 
-/* آراء العملاء */
+
 .about-us-testimonials {
   background-color: #fff;
   padding: 60px 20px;
@@ -186,7 +186,7 @@
   color: #007bff;
 }
 
-/* الفريق */
+
 .about-us-team {
   padding: 60px 0;
   text-align: center;
@@ -239,7 +239,7 @@
   color: #555;
 }
 
-/* التذييل */
+
 .about-us-footer {
   background-color: #007bff;
   color: white;
@@ -254,7 +254,7 @@
   font-size: 1rem;
 }
 
-/* استجابة */
+
 @media (max-width: 768px) {
   .about-us-content {
     grid-template-columns: 1fr;
@@ -271,7 +271,7 @@
   }
 }
 
-/* الشارة */
+
 .badge {
   position: absolute;
   top: -10px;
@@ -286,7 +286,7 @@
   z-index: 1;
 }
 
-/* التاج */
+
 .team-member.leader .crown {
   position: absolute;
   top: -25px;
@@ -297,7 +297,7 @@
   z-index: 2;
 }
 
-/* مظهر بطاقة القائد */
+
 .team-member.leader {
   border: 2px solid #ffc107;
   box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
@@ -328,7 +328,7 @@
   font-weight: 800;
 }
 
-/* 🌙 الوضع الليلي - صفحة من نحن */
+
 body.dark-mode .about-us-container {
   background-color: #1e1e1e;
   color: #f1f1f1;
@@ -393,7 +393,7 @@ body.dark-mode .timeline li span {
   color: #4da3ff;
 }
 
-/* القائد */
+
 body.dark-mode .team-member.leader {
   border-color: #f1c40f;
   box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
@@ -413,7 +413,7 @@ body.dark-mode .testimonial {
   color: #ccc;
 }
 
-/* البادج */
+
 body.dark-mode .badge {
   background-color: #ffc107;
   color: #000;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/SellOnline.css"; // تأكد من أن لديك هذا الملف
+import "../styles/SellOnline.css";
 
 const SellOnline = () => {
   const [products, setProducts] = useState([]);
@@ -14,9 +14,9 @@ const SellOnline = () => {
   const handleAddProduct = () => {
     if (newProduct.name && newProduct.price && newProduct.image) {
       setProducts([...products, newProduct]);
-      setNewProduct({ name: "", price: "", description: "", image: "" }); // إفراغ الحقول
+      setNewProduct({ name: "", price: "", description: "", image: "" }); // Clear fields
     } else {
-      alert("الرجاء تعبئة جميع الحقول");
+      alert("Please fill in all required fields.");
     }
   };
 
@@ -30,47 +30,45 @@ const SellOnline = () => {
 
   return (
     <div className="sell-online-container">
-      <h1>🛍️ منصة البيع</h1>
-      <p>هنا يمكنك إضافة منتجاتك وإدارتها بكل سهولة.</p>
+      <h1>🛍️ Sell Online Platform</h1>
+      <p>Here you can add and manage your products with ease.</p>
 
-      {/* نموذج إضافة المنتج */}
       <div className="add-product-form">
-        <h3>إضافة منتج جديد</h3>
+        <h3>Add New Product</h3>
         <input
           type="text"
           name="name"
           value={newProduct.name}
           onChange={handleInputChange}
-          placeholder="اسم المنتج"
+          placeholder="Product Name"
         />
         <input
           type="number"
           name="price"
           value={newProduct.price}
           onChange={handleInputChange}
-          placeholder="السعر"
+          placeholder="Price"
         />
         <textarea
           name="description"
           value={newProduct.description}
           onChange={handleInputChange}
-          placeholder="وصف المنتج"
+          placeholder="Product Description"
         />
         <input
           type="text"
           name="image"
           value={newProduct.image}
           onChange={handleInputChange}
-          placeholder="رابط صورة المنتج"
+          placeholder="Image URL"
         />
-        <button onClick={handleAddProduct}>إضافة المنتج</button>
+        <button onClick={handleAddProduct}>Add Product</button>
       </div>
 
-      {/* قائمة المنتجات */}
       <div className="product-list">
-        <h2>قائمة المنتجات</h2>
+        <h2>Product List</h2>
         {products.length === 0 ? (
-          <p>لا توجد منتجات حالياً</p>
+          <p>No products added yet.</p>
         ) : (
           <div className="products">
             {products.map((product, index) => (
@@ -82,7 +80,7 @@ const SellOnline = () => {
                 </p>
                 <p>{product.description}</p>
                 <Link to="/customize">
-                  <button>تخصيص المنتج</button>
+                  <button>Customize Product</button>
                 </Link>
               </div>
             ))}

@@ -1,4 +1,4 @@
-/* حاوية الصفحة */
+
 .admin-container {
   display: flex;
   min-height: 100vh;
@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-/* الشريط الجانبي */
+
 .admin-sidebar {
   display: inline-block;
   width: 250px;
@@ -21,88 +21,88 @@
   width: 30%;
 }
 
-/* تحسين مظهر العنوان في الشريط الجانبي */
+
 .admin-sidebar h2 {
   color: #fff;
   text-align: center;
-  font-size: 24px; /* زيادة حجم الخط */
-  font-weight: bold; /* جعل النص أكثر وضوحًا */
-  margin-bottom: 40px; /* زيادة المسافة السفلية */
-  text-transform: uppercase; /* جعل النص كبيرًا */
-  letter-spacing: 1px; /* إضافة مسافة بين الحروف */
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-bottom: 40px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
 }
 
-/* قائمة الروابط في الشريط الجانبي */
+
 .admin-sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* كل عنصر في القائمة */
+
 .admin-sidebar li {
-  margin-bottom: 25px; /* زيادة المسافة بين العناصر */
-  transition: margin-bottom 0.3s; /* إضافة تأثير عند تغيير المسافة */
+  margin-bottom: 25px; 
+  transition: margin-bottom 0.3s; 
 }
 
 .admin-sidebar li:hover {
-  margin-bottom: 30px; /* إضافة تأثير لتكبير المسافة عند التمرير */
+  margin-bottom: 30px; 
 }
 
-/* الروابط في الشريط الجانبي */
+
 .admin-sidebar a {
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 18px; /* زيادة حجم النص */
-  padding: 10px 15px; /* إضافة حشو داخلي حول النص */
-  border-radius: 5px; /* جعل الحواف مدورة */
-  transition: all 0.3s ease; /* إضافة تأثيرات سلسة عند التمرير */
-  background-color: rgba(255, 255, 255, 0.1); /* إضافة خلفية خفيفة */
+  font-size: 18px; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
-/* تأثير التمرير على الروابط */
+
 .admin-sidebar a:hover {
-  color: #007bff; /* تغيير اللون عند التمرير */
-  background-color: rgba(0, 123, 255, 0.2); /* تغيير الخلفية عند التمرير */
+  color: #007bff; 
+  background-color: rgba(0, 123, 255, 0.2); 
 }
 
-/* تحسين الأيقونات في الروابط */
+
 .admin-sidebar a svg {
-  margin-right: 15px; /* زيادة المسافة بين الأيقونة والنص */
-  font-size: 20px; /* زيادة حجم الأيقونات */
+  margin-right: 15px; 
+  font-size: 20px; 
 }
 
-/* تحسين تصميم العناصر عند التمرير */
+
 .admin-sidebar a:focus {
-  outline: none; /* إزالة تأثير التحديد الافتراضي */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* إضافة تأثير الظل عند التحديد */
+  outline: none; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
-/* إضافة تأثير عند التمرير على الرابط الأخير */
+
 .admin-sidebar li:last-child a {
-  background-color: #28a745; /* إضافة خلفية خضراء للزر الأخير */
-  color: white; /* النص يكون باللون الأبيض */
+  background-color: #28a745; 
+  color: white; 
 }
 
 .admin-sidebar li:last-child a:hover {
-  background-color: #218838; /* تغيير اللون عند التمرير */
-  color: #fff; /* الحفاظ على اللون الأبيض عند التمرير */
+  background-color: #218838; 
+  color: #fff; 
 }
 
-/* التأثير على العنصر الأول فقط (حيث يمكن إضافة المزيد من التحسينات) */
+
 .admin-sidebar li:first-child a {
-  background-color: #007bff; /* لون مميز للعناصر الأولى */
+  background-color: #007bff; 
 }
 
-/* إضافة تأثير التمرير على الروابط */
+
 .admin-sidebar li:first-child a:hover {
   background-color: #0056b3;
   color: white;
 }
 
-/* استجابة لتصميم الهواتف المحمولة */
+
 @media (max-width: 768px) {
   .admin-sidebar {
     width: 100%;
@@ -125,9 +125,9 @@
   }
 }
 
-/* المحتوى الرئيسي */
+
 .admin-main {
-  margin-left: 250px; /* تعديل المسافة لتجنب الشريط الجانبي */
+  margin-left: 250px; 
   padding: 40px;
   width: 100%;
   box-sizing: border-box;
@@ -141,7 +141,7 @@
   color: #333;
 }
 
-/* أسطوانات الإحصائيات */
+
 .admin-stats {
   display: flex;
   justify-content: space-between;
@@ -168,7 +168,7 @@
   font-weight: bold;
 }
 
-/* الأقسام الرئيسية */
+
 .admin-sections {
   display: flex;
   justify-content: space-between;
@@ -207,7 +207,7 @@
   text-decoration: underline;
 }
 
-/* استجابة لتصميم الهواتف المحمولة */
+
 @media (max-width: 768px) {
   .admin-container {
     flex-direction: column;

@@ -22,7 +22,7 @@ import ManageProducts from "./pages/admin/ManageProducts";
 import ManageUsers from "./pages/admin/ManageUsers";
 import AdminSettings from "./pages/admin/AdminSettings";
 import UploadedImages from "./pages/UploadedImages";
-// ✅ استيراد مكون رفع الصور
+
 import UploadImage from "./components/UploadImage";
 import ManageUploads from "./pages/admin/ManageUploads";
 import Favorites from "./pages/favorites";
@@ -59,10 +59,10 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about-us" element={<AboutUs />} />
           
-          {/* ✅ صفحة رفع الصور */}
+          {}
           <Route path="/upload-image" element={<UploadImage />} />
 
-          {/* صفحات الإدارة */}
+          {}
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/products" element={<ManageProducts />} />
           <Route path="/admin/users" element={<ManageUsers />} />
@@ -71,7 +71,7 @@ function App() {
           <Route path="/admin/uploads" element={<ManageUploads />} />
           <Route path="/admin/uploads" element={<ManageUploads />} />
           
-          {/* ✅ إضافة مسار صفحة المفضلات */}
+          {}
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/3d-printing" element={<Product3DPage />} />
           <Route path="/dtf-clothing" element={<DTFClothingPage />} />

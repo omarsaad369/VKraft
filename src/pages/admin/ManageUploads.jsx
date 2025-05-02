@@ -18,16 +18,16 @@ function ManageUploads() {
   };
 
   const handleDelete = async (id) => {
-    const confirm = window.confirm("هل أنت متأكد من حذف الصورة؟");
+    const confirm = window.confirm("Are you sure you want to delete this image?");
     if (!confirm) return;
 
     try {
       await deleteDoc(doc(db, 'uploads', id));
       setImages(images.filter((img) => img.id !== id));
-      alert('✅ تم حذف الصورة من قاعدة البيانات.');
+      alert('✅ Image deleted from database.');
     } catch (err) {
-      console.error('خطأ في الحذف:', err);
-      alert('❌ فشل في الحذف.');
+      console.error('Delete error:', err);
+      alert('❌ Failed to delete.');
     }
   };
 
@@ -36,10 +36,10 @@ function ManageUploads() {
   }, []);
 
   return (
-    <div className="page" style={{ padding: '20px', direction: 'rtl' }}>
-      <h2>🖼️ إدارة الصور المرفوعة</h2>
+    <div className="page" style={{ padding: '20px', direction: 'ltr' }}>
+      <h2>🖼️ Manage Uploaded Images</h2>
       {loading ? (
-        <p>⏳ جاري تحميل الصور...</p>
+        <p>⏳ Loading images...</p>
       ) : (
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
           {images.map((img) => (
@@ -56,7 +56,7 @@ function ManageUploads() {
                   cursor: 'pointer',
                 }}
               >
-                🗑️ حذف
+                🗑️ Delete
               </button>
             </div>
           ))}

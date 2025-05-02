@@ -1,10 +1,9 @@
-// src/redux/slices/userSlice.js
+
 
 import { createSlice } from "@reduxjs/toolkit";
-import initialUsers from "../../data/initialUsers"; // استيراد المستخدمين المبدئيين
-
+import initialUsers from "../../data/initialUsers";  
 const initialState = {
-  users: initialUsers, // ملء الحالة بالمستخدمين الجاهزين
+  users: initialUsers,  
 };
 
 const userSlice = createSlice({

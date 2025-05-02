@@ -16,7 +16,7 @@
     color: #333;
   }
   
-  /* ===== أدوات البحث والتصفية ===== */
+  
   .tracking-controls {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +61,7 @@
     white-space: nowrap;
   }
   
-  /* ===== الجدول ===== */
+  
   .order-tracking-table {
     width: 100%;
     border-collapse: collapse;
@@ -84,7 +84,7 @@
     margin-bottom: 10px;
   }
   
-  /* ===== الحالات ===== */
+  
   .status-cell {
     font-weight: bold;
     display: flex;
@@ -116,7 +116,7 @@
     margin-top: 30px;
   }
   
-  /* ===== استجابة للشاشات الصغيرة ===== */
+  
   @media (max-width: 600px) {
     .tracking-controls {
       flex-direction: column;
@@ -148,7 +148,7 @@
     color: #ffffff;
   }
   
-  /* ===== أدوات البحث والتصفية ===== */
+  
   body.dark-mode .search-group input,
   body.dark-mode .filter-group select {
     background-color: #2c2c2c;
@@ -169,7 +169,7 @@
     color: #ddd;
   }
   
-  /* ===== الجدول ===== */
+  
   body.dark-mode .order-tracking-table thead {
     background-color: #333;
   }
@@ -181,7 +181,7 @@
     border-bottom: 1px solid #444;
   }
   
-  /* ===== الحالات ===== */
+  
   body.dark-mode .status-cell {
     color: inherit;
   }

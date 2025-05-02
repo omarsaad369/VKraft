@@ -7,7 +7,7 @@
   transition: transform 0.3s ease;
 }
 
-/* ✨ الاهتزاز */
+
 .notifications-bell.shake {
   animation: shake 0.6s ease;
 }
@@ -39,14 +39,14 @@
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-/* 🌙 الوضع الليلي - جرس الإشعارات */
+
 body.dark-mode .notifications-bell {
-  color: #ffd700; /* لون ذهبي أنعم على خلفية داكنة */
+  color: #ffd700; 
 }
 
-/* 🌙 الوضع الليلي - عداد الإشعارات */
+
 body.dark-mode .notification-count {
-  background-color: #ff4444; /* أحمر أهدأ مناسب للخلفية الداكنة */
+  background-color: #ff4444; 
   color: #fff;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.2); /* ظل فاتح بسيط */
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.2); 
 }

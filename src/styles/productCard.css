@@ -42,7 +42,7 @@ h3 {
   background-color: #e85c00;
 }
 
-/* تخصيص الزر المفضل */
+
 .heart-container {
   position: absolute;
   top: -10px;
@@ -54,7 +54,7 @@ h3 {
   transition: transform 0.2s;
 }
 
-/* تخصيص الأيقونة عند التفاعل */
+
 .heart-container:hover {
   transform: scale(1.2);
 }

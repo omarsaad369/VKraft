@@ -44,13 +44,13 @@
   color: #888;
 }
 
-/* تمييز الإشعار الغير مقروء */
+
 .unread {
   border-left: 4px solid #007bff;
   background-color: #f0f7ff;
 }
 
-/* زر حذف الإشعار */
+
 .delete-notification-btn {
   background: none;
   border: none;
@@ -65,53 +65,53 @@
   color: #d00;
 }
 
-/* ألوان حسب نوع الإشعار */
+
 .notification-card.order {
-  border-right: 4px solid #28a745; /* أخضر */
+  border-right: 4px solid #28a745; 
 }
 
 .notification-card.system {
-  border-right: 4px solid #17a2b8; /* أزرق فاتح */
+  border-right: 4px solid #17a2b8; 
 }
 
 .notification-card.offer {
-  border-right: 4px solid #ffc107; /* أصفر */
+  border-right: 4px solid #ffc107; 
 }
 
-/* 🌙 الوضع الليلي - بطاقة الإشعار */
+
 body.dark-mode .notification-card {
   background-color: #1f1f1f;
   border: 1px solid #333;
   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
 }
 
-/* تأثير التحويم */
+
 body.dark-mode .notification-card:hover {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
 }
 
-/* عنوان الإشعار */
+
 body.dark-mode .notification-title {
   color: #f1f1f1;
 }
 
-/* نص الإشعار */
+
 body.dark-mode .notification-message {
   color: #ccc;
 }
 
-/* التاريخ */
+
 body.dark-mode .notification-date {
   color: #999;
 }
 
-/* غير مقروء */
+
 body.dark-mode .notification-card.unread {
-  background-color: #283544; /* أزرق داكن خفيف */
+  background-color: #283544; 
   border-left: 4px solid #2196f3;
 }
 
-/* زر الحذف */
+
 body.dark-mode .delete-notification-btn {
   color: #bbb;
 }
@@ -120,7 +120,7 @@ body.dark-mode .delete-notification-btn:hover {
   color: #ff4d4d;
 }
 
-/* ألوان حسب نوع الإشعار */
+
 body.dark-mode .notification-card.order {
   border-right: 4px solid #28a745;
 }

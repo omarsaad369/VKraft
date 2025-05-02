@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
 const Model = () => {
-  const { scene } = useGLTF("/models/hoodie.glb"); // تحميل النموذج
+  const { scene } = useGLTF("/models/hoodie.glb"); 
   return <primitive object={scene} scale={2} />;
 };
 

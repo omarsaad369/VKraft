@@ -1,11 +1,11 @@
-/* ✅ تصميم ملف المستخدم */
+
 .profile-container {
-  max-width: 480px; /* زيادة العرض ليكون أفضل للعرض */
+  max-width: 480px; 
   margin: 40px auto;
   text-align: center;
   background: #fff;
   padding: 40px;
-  border-radius: 15px; /* جعل الحواف دائرية أكثر */
+  border-radius: 15px; 
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,36 +16,36 @@
   justify-content: center;
 }
 
-/* تصميم الصورة الشخصية */
+
 .profile-img {
-  width: 150px; /* جعل الصورة أكبر قليلاً */
+  width: 150px; 
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #ff6600; /* حدود بارزة بألوان العلامة التجارية */
+  border: 5px solid #ff6600; 
   object-fit: cover;
   margin-bottom: 20px;
-  transition: transform 0.3s ease; /* تأثير التمرير */
+  transition: transform 0.3s ease; 
 }
 
 .profile-img:hover {
-  transform: scale(1.1); /* تأثير التكبير عند التمرير */
+  transform: scale(1.1); 
 }
 
-/* الحقول النصية */
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"] {
-  width: 85%; /* عرض أضيق ليكون أكثر توافقًا مع الشكل العام */
+  width: 85%; 
   padding: 12px;
   margin: 12px 0;
   border: 1px solid #ddd;
-  border-radius: 8px; /* حواف دائرية */
+  border-radius: 8px; 
   font-size: 16px;
   transition: border-color 0.3s ease;
 }
 
-/* إضافة تأثير عند التمرير على الحقول */
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
@@ -53,7 +53,7 @@ input[type="password"]:focus {
   outline: none;
 }
 
-/* زر تعديل الملف الشخصي */
+
 .edit-btn {
   background-color: #ff6600;
   color: white;
@@ -71,7 +71,7 @@ input[type="password"]:focus {
   background-color: #e65c00;
 }
 
-/* زر حفظ التعديلات */
+
 .save-btn {
   background-color: #28a745;
   color: white;
@@ -94,7 +94,7 @@ input[type="password"]:focus {
   cursor: not-allowed;
 }
 
-/* قسم تغيير كلمة المرور */
+
 .password-section {
   margin-top: 40px;
   background: #f8f9fa;
@@ -108,7 +108,7 @@ input[type="password"]:focus {
   font-size: 1.2rem;
 }
 
-/* زر تغيير كلمة المرور */
+
 .change-password-btn {
   background-color: #007bff;
   color: white;
@@ -125,7 +125,7 @@ input[type="password"]:focus {
   background-color: #0056b3;
 }
 
-/* التنبيهات */
+
 .alert {
   margin: 10px 0;
   padding: 12px;
@@ -142,7 +142,7 @@ input[type="password"]:focus {
   background-color: #dc3545;
 }
 
-/* قسم إحصائيات الحساب */
+
 .stats-section {
   margin-top: 30px;
   background: #f1f1f1;
@@ -160,7 +160,7 @@ input[type="password"]:focus {
   color: #555;
 }
 
-/* 🌙 الوضع الليلي - ملف userProfile.css */
+
 
 body.dark-mode .profile-container {
   background-color: #1f1f1f;

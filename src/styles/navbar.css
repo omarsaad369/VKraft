@@ -1,26 +1,26 @@
-/* 🌟 تصميم شريط التنقل */
+
 .navbar {
-  position: fixed; /* تحديد الشريط ليكون ثابتًا في أعلى الصفحة بحيث يبقى في مكانه أثناء التمرير */
-  top: 0; /* تحديد المسافة من أعلى الصفحة لتكون صفر، مما يعني أنه سيتواجد في أعلى الصفحة */
-  left: 0; /* تحديد المسافة من الجانب الأيسر لتكون صفر، بحيث يكون الشريط في الجهة اليسرى من الشاشة */
-  width: 97%; /* تعيين عرض الشريط ليكون 97% من عرض الشاشة، مما يتيح مسافة صغيرة من الجانبين */
-  background-color: #ff6600; /* تعيين اللون الخلفي للشريط إلى اللون البرتقالي (#ff6600) */
-  z-index: 1000; /* تعيين قيمة z-index لضمان أن الشريط يظهر فوق العناصر الأخرى */
-  display: flex; /* استخدام flexbox لتوزيع العناصر داخل الشريط بشكل مرن */
-  justify-content: space-between; /* توزيع العناصر داخل الشريط بحيث يتم توزيع المسافة بين العناصر بشكل متساوٍ */
-  align-items: center; /* محاذاة العناصر عموديًا في منتصف الشريط */
-  padding: 10px 20px; /* إضافة حشوة داخل الشريط (10px من الأعلى والأسفل، و20px من اليسار واليمين) */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف أسفل الشريط لإعطاء تأثير العمق */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* إضافة تأثيرات انتقالية ناعمة عند تغيير اللون الخلفي أو الظل */
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 97%; 
+  background-color: #ff6600; 
+  z-index: 1000; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 
-/* ✅ إضافة مسافة للجسم حتى لا يغطي الـ Navbar المحتوى */
+
 body {
   padding-top: 100px; 
 }
 
-/* ✅ تحسين الشعار */
+
 .logo {
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@ body {
 
 }
 
-/* ✅ تصميم مربع البحث */
+
 .search-container {
   display: flex;
   align-items: center;
@@ -55,8 +55,8 @@ body {
 }
 
 .search-container:hover {
-  width: 170px; /* توسيع مربع البحث عند التحويم */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+  width: 170px; 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .search-input {
@@ -78,7 +78,7 @@ body {
   transform: scale(1.2);
 }
 
-/* ✅ تصميم قائمة نتائج البحث */
+
 .search-results {
   position: absolute;
   top: 100%;
@@ -121,13 +121,13 @@ body {
 
 
 
-/* 📌 قائمة الخيارات */
+
 .menu {
   display: flex;
   gap: 20px;
 }
 
-/* 🎨 تحسين Sell Online & Order for Yourself */
+
 .btn-link {
   background: white;
   color: #ff6600;
@@ -145,14 +145,14 @@ body {
   color: white;
 }
 
-/* 👤 تنسيق حساب المستخدم */
+
 .account-options {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* ✅ تحسين زر تسجيل الدخول */
+
 .signin-btn {
   display: flex;
   align-items: center;
@@ -173,7 +173,7 @@ body {
   color: white;
 }
 
-/* ✅ تحسين زر تسجيل الحساب */
+
 .signup-btn {
   background: white;
   color: #007bff;
@@ -192,21 +192,21 @@ body {
   color: white;
 }
 
-/* 🛒 تنسيق أيقونة السلة */
+
 .cart-icon {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-/* ✅ تحسين تنسيق أيقونة السلة */
+
 .cart-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px;
   background: white;
-  color: #ff6600; /* اللون البرتقالي */
+  color: #ff6600; 
   border-radius: 50%;
   font-size: 20px;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -223,7 +223,7 @@ body {
   color: #ffeb3b;
 }
 
-/* ✅ تحسين تصميم معلومات المستخدم */
+
 .user-menu {
   display: flex;
   align-items: center;
@@ -245,7 +245,7 @@ body {
   transform: scale(1.05);
 }
 
-/* 🛠️ تحسين زر تسجيل الخروج */
+
 .signout-btn {
   background-color: white;
   color: red;
@@ -266,7 +266,7 @@ body {
   color: white;
 }
 
-/* ✅ تحسين التوافق مع الهواتف */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -295,9 +295,9 @@ body {
   }
 }
 
-/* ✅ تحسين زر الهامبورغر (☰) */
+
 .hamburger {
-  display: none; /* إخفاء الزر في الأجهزة الكبيرة */
+  display: none; 
   font-size: 24px;
   cursor: pointer;
   background: none;
@@ -310,7 +310,7 @@ body {
   color: #ffeb3b;
 }
 
-/* ✅ تنسيق القائمة العامة */
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -319,7 +319,7 @@ body {
   margin-left: -50px;
 }
 
-/* ✅ تحسين القائمة للأجهزة الصغيرة */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -353,27 +353,27 @@ body {
   }
 }
 
-/* ✅ تحسين الجزء الأيسر (الشعار + زر الهامبورغر) */
+
 .nav-left {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* ✅ تحسين أيقونة القائمة */
+
 .menu-icon {
   font-size: 22px;
   margin-right: 8px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* تنسيق قائمة لوحة التحكم */
+
 .admin-dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* زر "Admin" */
+
 .admin-btn {
   background-color: #ff9f00;
   color: white;
@@ -384,7 +384,7 @@ body {
   font-size: 16px;
 }
 
-/* قائمة الروابط عند المرور على "Admin" */
+
 .admin-links {
   display: none;
   position: absolute;
@@ -432,7 +432,7 @@ body {
 }
 
 
-/* ✅ تحسين زر القائمة (☰) */
+
 .hamburger-menu {
   display: flex;
   align-items: center;
@@ -448,27 +448,27 @@ body {
   position: relative;
 }
 
-/* قائمة الروابط المنسدلة */
+
 .dropdown-menu {
-  display: none; /* إخفاء القائمة بشكل افتراضي */
+  display: none; 
   position: absolute;
   background-color: white;
   color: black;
-  top: 100%; /* تحديد المسافة من أعلى العنصر الأب */
+  top: 100%; 
   left: 0;
   width: 220px;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 0; /* إخفاء القائمة عبر تغيير الشفافية */
-  transform: translateY(-10px); /* تحريك القائمة إلى الأعلى قليلاً */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* تأثير الانتقال السلس */
+  opacity: 0; 
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
   list-style: none;
   padding: 10px;
-  max-height: 70vh; /* ارتفاع مناسب للتمرير */
-  overflow-y: auto; /* تمكين التمرير */
+  max-height: 70vh; 
+  overflow-y: auto; 
 }
 
-/* شكل شريط التمرير */
+
 .dropdown-menu::-webkit-scrollbar {
   width: 6px;
 }
@@ -482,14 +482,14 @@ body {
   background-color: #999;
 }
 
-/* عندما يتم تفعيل القائمة (عند التمرير) */
+
 .dropdown-menu.show {
-  display: block; /* جعل القائمة مرئية */
-  opacity: 1; /* جعل القائمة بالكامل مرئية */
-  transform: translateY(0); /* إرجاع القائمة إلى مكانها الطبيعي */
+  display: block; 
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
-/* تحسين تأثير العناصر داخل القائمة المنسدلة عند التمرير */
+
 .dropdown-menu li {
   padding: 10px;
   cursor: pointer;
@@ -497,12 +497,12 @@ body {
 }
 
 .dropdown-menu li:hover {
-  background-color: #ff6600; /* تغيير الخلفية عند التمرير */
-  color: white; /* تغيير اللون عند التمرير */
+  background-color: #ff6600; 
+  color: white; 
 }
 
 
-/* ✅ تحسين القائمة المنسدلة للأقسام */
+
 .dropdown {
   position: relative;
   cursor: pointer;
@@ -519,7 +519,7 @@ body {
   color: #ffeb3b;
 }
 
-/* زر تبديل الوضع */
+
 .dark-mode-toggle {
   display: flex;
   align-items: center;
@@ -539,12 +539,12 @@ body {
   background-color: #e0e0e0;
 }
 
-/* أيقونة الوضع الليلي */
+
 .dark-mode-toggle svg {
   font-size: 18px;
 }
 
-/* الوضع الليلي */
+
 body.dark-mode .dark-mode-toggle {
   background-color: #333;
   color: #f9f9f9;

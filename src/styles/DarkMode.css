@@ -1,47 +1,47 @@
-/* حالة الوضع الليلي */
+
 body.dark-mode {
-    background-color: #121212; /* خلفية داكنة */
-    color: #fff; /* نص أبيض */
+    background-color: #121212; 
+    color: #fff; 
   }
   
   .navbar.dark-mode {
-    background-color: #333; /* خلفية داكنة للشريط */
+    background-color: #333; 
   }
   
   .navbar .logo-img, .navbar .logo-word {
-    filter: brightness(0.8); /* تقليل سطوع الشعار في الوضع الليلي */
+    filter: brightness(0.8); 
   }
   
   .search-container.dark-mode {
-    background: #333; /* خلفية داكنة لمربع البحث */
-    border-color: #444; /* حدود داكنة */
+    background: #333; 
+    border-color: #444; 
   }
   
   .search-input.dark-mode{
-    color: #fff; /* نص أبيض في مربع البحث */
-    background: #444; /* خلفية داكنة في مربع البحث */
+    color: #fff; 
+    background: #444; 
   }
   
   .search-btn.dark-mode {
-    background: #ff6600; /* زر البحث باللون البرتقالي */
+    background: #ff6600; 
   }
   
-  /* إضافة تأثيرات عند التمرير */
+  
   .search-btn:hover.dark-mode {
-    background-color: #ff4500; /* تغيير اللون عند التمرير */
+    background-color: #ff4500; 
   }
   
-  /* تنسيق الروابط عند التمرير */
+  
   .nav-menu a:hover.dark-mode {
-    color: #ff6600; /* لون النص عند التمرير */
+    color: #ff6600; 
   }
   
   .cart-icon.dark-mode {
-    background: #444; /* خلفية داكنة لأيقونة السلة */
-    color: #fff; /* نص أبيض */
+    background: #444; 
+    color: #fff; 
   }
   
-  /* تخصيص الأزرار عند التمرير */
+  
   .signout-btn, .btn-link, .signin-btn, .signup-btn {
     background: #ff6600;
     color: white;
@@ -50,48 +50,48 @@ body.dark-mode {
   }
   
   .signout-btn:hover, .btn-link:hover, .signin-btn:hover, .signup-btn:hover {
-    background: #ff4500; /* تغيير اللون عند التمرير */
+    background: #ff4500; 
   }
   
-  /* تخصيص الخلفية في الوضع الليلي */
+  
   .search-container.dark-mode {
-    background: #333; /* خلفية داكنة لمربع البحث في الوضع الليلي */
+    background: #333; 
   }
   
   .search-btn.dark-mode {
-    background-color: #ff4500; /* تغيير اللون في الوضع الليلي */
+    background-color: #ff4500; 
   }
   
-  /* 🌟 الوضع الليلي */
+  
   body.dark-mode {
-    background-color: #121212; /* خلفية داكنة للموقع */
-    color: #f9f9f9; /* نص أبيض في الوضع الليلي */
+    background-color: #121212; 
+    color: #f9f9f9; 
   }
   
-  /* شريط التنقل */
+  
   body.dark-mode .navbar {
-    background-color: #333; /* خلفية داكنة للشريط */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* إضافة تأثير الظل الداكن */
+    background-color: #333; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
   }
   
-  /* تحسين الشعار في الوضع الليلي */
+  
   body.dark-mode .logo {
-    color: #f9f9f9; /* جعل النص أبيض في الوضع الليلي */
+    color: #f9f9f9; 
   }
   
   body.dark-mode .logo-img,
   body.dark-mode .logo-word {
-    filter: brightness(0.8); /* تقليل سطوع الشعار */
+    filter: brightness(0.8); 
   }
   
-  /* تحسين مربع البحث في الوضع الليلي */
+  
   body.dark-mode .search-container {
-    background-color: #444; /* خلفية داكنة لمربع البحث */
+    background-color: #444; 
   }
   
   body.dark-mode .search-input {
-    color: #f9f9f9; /* النص الأبيض في مربع البحث */
-    background-color: #333; /* خلفية داكنة */
+    color: #f9f9f9; 
+    background-color: #333; 
   }
   
   body.dark-mode .search-btn {
@@ -103,18 +103,18 @@ body.dark-mode {
     background-color: #ff4500;
   }
   
-  /* قائمة البحث في الوضع الليلي */
+  
   body.dark-mode .search-results {
-    background-color: #333; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #333; 
+    color: #f9f9f9; 
   }
   
   body.dark-mode .search-results li:hover {
-    background-color: #ff6600; /* تغيير الخلفية عند التمرير */
+    background-color: #ff6600; 
     color: white;
   }
   
-  /* قائمة الخيارات في الوضع الليلي */
+  
   body.dark-mode .btn-link {
     background: #333;
     color: #ff6600;
@@ -125,7 +125,7 @@ body.dark-mode {
     color: white;
   }
   
-  /* تحسين زر تسجيل الدخول */
+  
   body.dark-mode .signin-btn,
   body.dark-mode .signup-btn {
     background: #444;
@@ -138,27 +138,27 @@ body.dark-mode {
     color: white;
   }
   
-  /* تحسين أيقونة السلة في الوضع الليلي */
+  
   body.dark-mode .cart-icon {
-    background: #444; /* خلفية داكنة */
-    color: #ff6600; /* اللون البرتقالي */
+    background: #444; 
+    color: #ff6600; 
   }
   
   body.dark-mode .cart-icon:hover {
-    background: #ff5722; /* خلفية عند التمرير */
+    background: #ff5722; 
     color: white;
   }
   
-  /* تنسيق معلومات المستخدم في الوضع الليلي */
+  
   body.dark-mode .user-info {
     color: #f9f9f9;
   }
   
   body.dark-mode .user-info:hover {
-    color: #ffeb3b; /* تغيير اللون عند التمرير */
+    color: #ffeb3b; 
   }
   
-  /* زر تسجيل الخروج في الوضع الليلي */
+  
   body.dark-mode .signout-btn {
     background-color: #444;
     color: red;
@@ -169,34 +169,34 @@ body.dark-mode {
     color: white;
   }
   
-  /* تحسين القائمة المنسدلة */
+  
   body.dark-mode .dropdown-menu {
-    background-color: #444; /* خلفية داكنة للقائمة المنسدلة */
-    color: white; /* نص أبيض */
+    background-color: #444; 
+    color: white; 
   }
   
   body.dark-mode .dropdown-menu li:hover {
-    background-color: #ff6600; /* تغيير الخلفية عند التمرير */
+    background-color: #ff6600; 
     color: white;
   }
   
-  /* تخصيص زر الهامبورغر في الوضع الليلي */
+  
   body.dark-mode .hamburger-menu {
-    background: #333; /* خلفية داكنة */
+    background: #333; 
     color: white;
   }
   
   body.dark-mode .hamburger-menu:hover {
-    background: #ff5722; /* خلفية عند التمرير */
+    background: #ff5722; 
   }
   
-  /* تحريك القائمة */
+  
   body.dark-mode .dropdown-menu {
     background-color: #444;
     color: white;
   }
   
-  /* قائمة الروابط */
+  
   body.dark-mode .admin-link1 {
     color: #f9f9f9;
   }
@@ -206,269 +206,269 @@ body.dark-mode {
     color: white;
   }
   
-  /* 🌙 الوضع الليلي */
+  
 body.dark-mode {
-    background-color: #121212; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #121212; 
+    color: #f9f9f9; 
   }
   
-  /* الحاوية الرئيسية */
+  
   body.dark-mode .about-us-container {
-    background-color: #1f1f1f; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #1f1f1f; 
+    color: #f9f9f9; 
   }
   
-  /* رأس الصفحة */
+  
   body.dark-mode .about-us-header {
-    background-color: #333; /* خلفية داكنة لرأس الصفحة */
-    color: #ffffff; /* نص أبيض */
+    background-color: #333; 
+    color: #ffffff; 
   }
   
-  /* تحسين العنوان في رأس الصفحة */
+  
   body.dark-mode .about-us-header h1 {
     color: #ffffff;
   }
   
-  /* نص الفقرة في رأس الصفحة */
+  
   body.dark-mode .about-us-header p {
-    color: #f1f1f1; /* نص فاتح في الفقرة */
+    color: #f1f1f1; 
   }
   
-  /* المحتوى الأساسي */
+  
   body.dark-mode .about-us-content {
-    color: #ddd; /* نص فاتح */
+    color: #ddd; 
   }
   
-  /* نص الفقرات */
+  
   body.dark-mode .about-us-text {
-    color: #ddd; /* نص فاتح في الفقرات */
+    color: #ddd; 
   }
   
   body.dark-mode .about-us-text h2 {
-    color: #ffffff; /* عنوان النص باللون الأبيض */
+    color: #ffffff; 
   }
   
-  /* تحسين الصورة */
+  
   body.dark-mode .about-us-image img {
-    filter: brightness(0.8); /* تقليل سطوع الصورة في الوضع الليلي */
+    filter: brightness(0.8); 
   }
   
-  /* القسم الخاص بالرسالة */
+  
   body.dark-mode .about-us-mission {
-    background-color: #222; /* خلفية داكنة للقسم */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #222; 
+    color: #f9f9f9; 
   }
   
-  /* تحسين النصوص في القسم الخاص بالرسالة */
+  
   body.dark-mode .about-us-mission h2 {
-    color: #ffffff; /* عنوان نص أبيض */
+    color: #ffffff; 
   }
   
   body.dark-mode .about-us-mission p {
-    color: #f1f1f1; /* نص فاتح في الفقرات */
+    color: #f1f1f1; 
   }
   
-  /* قيم الشركة */
+  
   body.dark-mode .about-us-values {
-    background-color: #1f1f1f; /* خلفية داكنة */
+    background-color: #1f1f1f; 
   }
   
   body.dark-mode .about-us-values h2 {
-    color: #ffffff; /* عنوان النص أبيض */
+    color: #ffffff; 
   }
   
-  /* تعديل الشبكة لعرض القيم */
+  
   body.dark-mode .values-grid {
-    color: #ddd; /* نص فاتح في القيم */
+    color: #ddd; 
   }
   
   body.dark-mode .value-item {
-    background-color: #333; /* خلفية داكنة للعناصر */
-    color: #f9f9f9; /* نص أبيض */
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); /* إضافة تأثير ظل داكن */
+    background-color: #333; 
+    color: #f9f9f9; 
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); 
   }
   
-  /* تحسين عنوان القيم */
+  
   body.dark-mode .value-item h3 {
-    color: #4da3ff; /* لون مميز للعناوين */
+    color: #4da3ff; 
   }
   
-  /* النصوص داخل القيم */
+  
   body.dark-mode .value-item p {
-    color: #ddd; /* نص فاتح */
+    color: #ddd; 
   }
   
-  /* تذييل الصفحة */
+  
   body.dark-mode .about-us-footer {
-    background-color: #333; /* خلفية داكنة للتذييل */
-    color: #fff; /* نص أبيض */
+    background-color: #333; 
+    color: #fff; 
   }
   
-  /* تحسين النصوص في التذييل */
+  
   body.dark-mode .about-us-footer p {
-    color: #fff; /* نص أبيض */
+    color: #fff; 
   }
   
-  /* 🌙 الوضع الليلي */
+  
 body.dark-mode {
-    background-color: #121212; /* خلفية داكنة للموقع */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #121212; 
+    color: #f9f9f9; 
   }
   
-  /* الحاوية الرئيسية */
+  
   body.dark-mode .contact-us-container {
-    background-color: #1f1f1f; /* خلفية داكنة */
+    background-color: #1f1f1f; 
     color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* تحسين الظل */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
   }
   
-  /* رأس الصفحة */
+  
   body.dark-mode .contact-us-header {
-    background-color: #333; /* خلفية داكنة لرأس الصفحة */
-    color: #fff; /* نص أبيض */
+    background-color: #333; 
+    color: #fff; 
   }
   
-  /* تحسين العنوان في رأس الصفحة */
+  
   body.dark-mode .contact-us-header h1 {
     color: #fff;
   }
   
-  /* نص الفقرة في رأس الصفحة */
+  
   body.dark-mode .contact-us-header p {
     color: #f1f1f1;
   }
   
-  /* معلومات الاتصال */
+  
   body.dark-mode .contact-info {
     color: #f9f9f9;
   }
   
   body.dark-mode .contact-info-item {
-    background-color: #333; /* خلفية داكنة */
+    background-color: #333; 
     color: #f9f9f9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* تحسين الظل */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
   }
   
-  /* أيقونات الاتصال */
+  
   body.dark-mode .contact-info-item svg {
     color: #007bff;
   }
   
-  /* نموذج التواصل */
+  
   body.dark-mode .contact-form {
-    background-color: #222; /* خلفية داكنة للنموذج */
+    background-color: #222; 
     color: #f9f9f9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* تحسين الظل */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
   }
   
-  /* تنسيق الحقول */
+  
   body.dark-mode .contact-form input,
   body.dark-mode .contact-form textarea {
-    background-color: #333; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #333; 
+    color: #f9f9f9; 
     border: 1px solid #444;
   }
   
   body.dark-mode .contact-form button {
-    background-color: #007bff; /* خلفية زرقاء للزر */
+    background-color: #007bff; 
     color: white;
   }
   
   body.dark-mode .contact-form button:hover {
-    background-color: #0056b3; /* تغيير اللون عند التمرير */
+    background-color: #0056b3; 
   }
   
-  /* الرسالة التي تظهر بعد إرسال النموذج */
+  
   body.dark-mode .thank-you-message {
-    color: #28a745; /* تغيير اللون إلى الأخضر عند الشكر */
+    color: #28a745; 
   }
   
-  /* تنسيق الـ Footer */
+  
   body.dark-mode .footer {
-    background-color: #333; /* خلفية داكنة للتذييل */
+    background-color: #333; 
     color: white;
   }
   
-  /* تنسيق قسم الشبكات الاجتماعية */
+  
   body.dark-mode .social-media {
-    background-color: #21d192; /* خلفية القسم */
+    background-color: #21d192; 
   }
   
-  /* تنسيق الأيقونات داخل قسم الشبكات الاجتماعية */
+  
   body.dark-mode .social-icons a {
-    color: white; /* اللون الأبيض للأيقونات */
+    color: white; 
   }
   
   body.dark-mode .social-icons a:hover {
-    color: #ffeb3b; /* تغيير اللون عند التمرير */
+    color: #ffeb3b; 
   }
   
-  /* تنسيق الأقسام داخل Footer */
+  
   body.dark-mode .links-section {
     color: #f9f9f9;
   }
   
-  /* تنسيق الأعمدة داخل الـ Footer */
+  
   body.dark-mode .links-section .col {
     color: #f9f9f9;
   }
   
-  /* تخصيص روابط Footer */
+  
   body.dark-mode .footer a {
-    color: #f9f9f9; /* تغيير اللون إلى الأبيض */
+    color: #f9f9f9; 
   }
   
   body.dark-mode .footer a:hover {
-    color: #ffeb3b; /* تغيير اللون عند التمرير */
+    color: #ffeb3b; 
   }
   
-  /* تخصيص حقوق الملكية */
+  
   body.dark-mode .footer .footer-rights {
-    background-color: rgba(0, 0, 0, 0.3); /* تغيير الخلفية لتناسب الوضع الليلي */
-    color: #f9f9f9; /* النص يكون أبيض */
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #f9f9f9; 
   }
   
-  /* تخصيص الـ FAQ */
+  
   body.dark-mode .faq-container {
-    background-color: #1f1f1f; /* خلفية داكنة للـ FAQ */
+    background-color: #1f1f1f; 
     color: #f9f9f9;
   }
   
-  /* تخصيص أسئلة FAQ */
+  
   body.dark-mode .faq-question {
-    background-color: #333; /* خلفية داكنة للأسئلة */
+    background-color: #333; 
     color: #f9f9f9;
   }
   
   body.dark-mode .faq-question.active {
-    background-color: #0056b3; /* تغيير الخلفية عند التحديد */
+    background-color: #0056b3; 
   }
   
-  /* تخصيص إجابات FAQ */
+  
   body.dark-mode .faq-answer {
-    background-color: #444; /* خلفية داكنة للإجابات */
+    background-color: #444; 
     color: #f9f9f9;
   }
   
-  /* تخصيص زر "تأكيد الطلب" */
+  
   body.dark-mode .confirm-order-btn {
     background-color: #28a745;
     color: white;
   }
   
-  /* تخصيص الـ Footer داخل صفحة الـ Checkout */
+  
   body.dark-mode .checkout-container {
-    background: #333; /* خلفية داكنة */
+    background: #333; 
     color: #f9f9f9;
   }
   
-  /* تخصيص الخانات الخاصة بالمقاس المخصص */
+  
   body.dark-mode .customize-container {
-    background-color: #222; /* خلفية داكنة */
+    background-color: #222; 
     color: #f9f9f9;
   }
   
-  /* تخصيص الـ Buttons داخل الـ Customize */
+  
   body.dark-mode .add-to-cart-btn {
     background-color: #6c5ce7;
     color: white;
@@ -487,30 +487,30 @@ body.dark-mode {
     background-color: #019c6e;
   }
   
-  /* 🌙 الوضع الليلي */
+  
 body.dark-mode {
-    background-color: #121212; /* خلفية داكنة للموقع */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #121212; 
+    color: #f9f9f9; 
   }
   
-  /* حاوية الصفحة */
+  
   body.dark-mode .contact-us-container,
   body.dark-mode .cart-container,
   body.dark-mode .checkout-container,
   body.dark-mode .admin-container {
-    background-color: #1f1f1f; /* خلفية داكنة */
+    background-color: #1f1f1f; 
     color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* تحسين الظل */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
   }
   
-  /* رأس الصفحة */
+  
   body.dark-mode .contact-us-header,
   body.dark-mode .footer {
-    background-color: #333; /* خلفية داكنة لرأس الصفحة و Footer */
-    color: #fff; /* نص أبيض */
+    background-color: #333; 
+    color: #fff; 
   }
   
-  /* نص الفقرات */
+  
   body.dark-mode .contact-us-header p,
   body.dark-mode .footer p,
   body.dark-mode .settings-section h2,
@@ -519,9 +519,9 @@ body.dark-mode {
     color: #f1f1f1;
   }
   
-  /* تصميم الشريط الجانبي */
+  
   body.dark-mode .admin-sidebar {
-    background-color: #343a40; /* خلفية داكنة */
+    background-color: #343a40; 
     color: white;
   }
   
@@ -531,44 +531,44 @@ body.dark-mode {
   
   body.dark-mode .admin-sidebar a {
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة */
+    background-color: rgba(255, 255, 255, 0.1); 
   }
   
-  /* تأثير التمرير على الروابط في الشريط الجانبي */
+  
   body.dark-mode .admin-sidebar a:hover {
     color: #007bff;
     background-color: rgba(0, 123, 255, 0.2);
   }
   
-  /* تصميم العنصر في الشريط الجانبي */
+  
   body.dark-mode .admin-sidebar .admin-sidebar a:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   }
   
-  /* الخلفيات داخل الـ FAQ */
+  
   body.dark-mode .faq-item {
-    background-color: #444; /* خلفية داكنة للأسئلة */
+    background-color: #444; 
   }
   
   body.dark-mode .faq-question {
-    background-color: #333; /* خلفية داكنة للأسئلة */
+    background-color: #333; 
   }
   
   body.dark-mode .faq-answer {
-    background-color: #222; /* خلفية داكنة للإجابات */
+    background-color: #222; 
     color: #f9f9f9;
   }
   
-  /* الحقول والإدخال */
+  
   body.dark-mode .settings-item input,
   body.dark-mode .settings-item select {
-    background-color: #333; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #333; 
+    color: #f9f9f9; 
     border: 1px solid #444;
   }
   
-  /* إضافة اللون الأخضر للأزرار */
+  
   body.dark-mode .btnall {
     background-color: #28a745;
     color: white;
@@ -578,121 +578,121 @@ body.dark-mode {
     background-color: #218838;
   }
   
-  /* أزرار الحذف في سلة التسوق */
+  
   body.dark-mode .delete-btn {
     background: #dc3545;
     color: white;
   }
   
-  /* زر "إتمام الطلب" */
+  
   body.dark-mode .checkout-btn {
     background: #28a745;
     color: white;
   }
   
-  /* تخصيص زر تأكيد الطلب */
+  
   body.dark-mode .confirm-order-btn {
     background: #28a745;
     color: white;
   }
   
-  /* تنسيق المنتجات داخل سلة التسوق */
+  
   body.dark-mode .cart-item {
     background-color: #333;
     color: #f9f9f9;
   }
   
-  /* تخصيص النصوص في سلة التسوق */
+  
   body.dark-mode .cart-details p {
     color: #f9f9f9;
   }
   
   body.dark-mode .product-preview {
-    background-color: #222; /* لون خلفية داكنة للمربع */
+    background-color: #222; 
   }
   
-  /* تخصيص النصوص */
+  
   body.dark-mode .custom-text {
     color: white;
   }
   
-  /* تخصيص عناصر التخصيص */
+  
   body.dark-mode .customize-container {
-    background-color: #222; /* خلفية داكنة */
+    background-color: #222; 
     color: #f9f9f9;
   }
   
   body.dark-mode .preview {
-    background-color: #222; /* خلفية داكنة للمعاينة */
+    background-color: #222; 
     color: #f9f9f9;
   }
   
   body.dark-mode .custom-image {
-    border: 3px dashed #888; /* تغيير لون الإطار */
+    border: 3px dashed #888; 
   }
   
   body.dark-mode .custom-text:hover {
-    color: #ffeb3b; /* تغيير اللون عند المرور بالماوس */
+    color: #ffeb3b; 
   }
   
   body.dark-mode .custom-size-container {
-    background-color: #222; /* خلفية داكنة */
+    background-color: #222; 
   }
   
-  /* تنسيق الروابط في الفوتر */
+  
   body.dark-mode .footer .footer-links a {
-    color: #f9f9f9; /* اللون الأبيض للروابط */
+    color: #f9f9f9; 
   }
   
   body.dark-mode .footer .footer-rights {
-    background-color: rgba(0, 0, 0, 0.3); /* خلفية مظللة للحقوق */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #f9f9f9; 
   }
   
-  /* تخصيص الحقول المتعلقة بالدفع */
+  
   body.dark-mode .payment-info {
-    background: #333; /* خلفية داكنة */
+    background: #333; 
     color: #f9f9f9;
   }
   
-  /* 🌙 الوضع الليلي */
+  
 body.dark-mode {
-    background-color: #121212; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #121212; 
+    color: #f9f9f9; 
   }
   
-  /* الحاوية الرئيسية */
+  
   body.dark-mode .home-container,
   body.dark-mode .manage-products-container,
   body.dark-mode .manage-users-container {
-    background-color: #1f1f1f; /* خلفية داكنة */
+    background-color: #1f1f1f; 
     color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* تحسين الظلال */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
   }
   
-  /* الرأس */
+  
   body.dark-mode .page-title,
   body.dark-mode .products-table th,
   body.dark-mode .user-info h3 {
     color: #f9f9f9;
   }
   
-  /* تنسيق شبكة المنتجات */
+  
   body.dark-mode .products-grid {
-    background-color: #333; /* خلفية داكنة للمنتجات */
+    background-color: #333; 
   }
   
-  /* تنسيق المنتج */
+  
   body.dark-mode .product-card {
-    background-color: #222; /* خلفية داكنة للبطاقات */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #222; 
+    color: #f9f9f9; 
   }
   
   body.dark-mode .product-card img {
     border-radius: 5px;
   }
   
-  /* أزرار */
+  
   body.dark-mode .product-card button,
   body.dark-mode .edit-btn,
   body.dark-mode .delete-btn {
@@ -706,35 +706,35 @@ body.dark-mode {
     background-color: #e64a19;
   }
   
-  /* جدول المنتجات */
+  
   body.dark-mode .products-table {
     background-color: #222;
     color: #f9f9f9;
   }
   
   body.dark-mode .products-table th {
-    background-color: #333; /* خلفية داكنة لرأس الجدول */
+    background-color: #333; 
     color: #fff;
   }
   
-  /* صورة المنتج */
+  
   body.dark-mode .product-img {
     border-radius: 5px;
     filter: brightness(0.8);
   }
   
-  /* تصميم بطاقات المستخدم */
+  
   body.dark-mode .user-card {
-    background-color: #333; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #333; 
+    color: #f9f9f9; 
   }
   
-  /* الأيقونات */
+  
   body.dark-mode .user-icon {
-    color: #ff6600; /* لون الأيقونات */
+    color: #ff6600; 
   }
   
-  /* أزرار الحذف */
+  
   body.dark-mode .delete-btn {
     background-color: #f44336;
     color: white;
@@ -744,18 +744,18 @@ body.dark-mode {
     background-color: #d32f2f;
   }
   
-  /* رسالة لا يوجد منتجات */
+  
   body.dark-mode .no-products,
   body.dark-mode .no-users {
     color: #bbb;
   }
   
-  /* مؤشر التحميل */
+  
   body.dark-mode .pyramid-loader .wrapper .side {
     background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
   }
   
-  /* تحسينات للأجهزة الصغيرة */
+  
   @media (max-width: 768px) {
     body.dark-mode .products-table th,
     body.dark-mode .products-table td {
@@ -773,30 +773,30 @@ body.dark-mode {
     }
   }
 
-  /* 🌙 الوضع الداكن */
+  
 body.dark-mode {
-    background-color: #121212; /* خلفية داكنة */
-    color: #f9f9f9; /* نص أبيض */
+    background-color: #121212; 
+    color: #f9f9f9; 
   }
   
-  /* ✅ تغيير خلفية الحاويات */
+  
   body.dark-mode .home-container,
   body.dark-mode .signup-container,
   body.dark-mode .profile-container,
   body.dark-mode .manage-products-container,
   body.dark-mode .manage-users-container {
-    background-color: #1f1f1f; /* خلفية داكنة */
+    background-color: #1f1f1f; 
     color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* تحسين الظلال */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
   }
   
-  /* ✅ خلفية البطاقة في المنتجات */
+  
   body.dark-mode .product-card {
-    background-color: #222; /* خلفية داكنة */
+    background-color: #222; 
     color: #f9f9f9;
   }
   
-  /* ✅ زر التسجيل في وضع داكن */
+  
   body.dark-mode .signup-btn {
     background: #28a745;
     color: white;
@@ -806,7 +806,7 @@ body.dark-mode {
     background: #218838;
   }
   
-  /* ✅ تغيير الأزرار عند التمرير */
+  
   body.dark-mode .edit-btn,
   body.dark-mode .delete-btn {
     background-color: #ff5722;
@@ -818,18 +818,18 @@ body.dark-mode {
     background-color: #e64a19;
   }
   
-  /* ✅ تنسيق الصورة في البطاقة */
+  
   body.dark-mode .profile-img {
     border: 5px solid #ff6600;
-    transform: scale(1.1); /* تكبير الصورة عند التمرير */
+    transform: scale(1.1); 
   }
   
-  /* ✅ تأثيرات النصوص والعناوين */
+  
   body.dark-mode h2, body.dark-mode h3, body.dark-mode p {
     color: #f9f9f9;
   }
   
-  /* ✅ خلفية الحقول النصية */
+  
   body.dark-mode input[type="text"],
   body.dark-mode input[type="email"],
   body.dark-mode input[type="tel"],
@@ -845,24 +845,24 @@ body.dark-mode {
     border-color: #ff6600;
   }
   
-  /* ✅ خلفية قسم كلمة المرور */
+  
   body.dark-mode .password-section {
     background: #333;
   }
   
-  /* ✅ تغيير الأيقونات */
+  
   body.dark-mode .user-icon {
     color: #ff6600;
   }
   
-  /* ✅ الرسائل */
+  
   body.dark-mode .error,
   body.dark-mode .alert.success,
   body.dark-mode .alert.error {
     color: #fff;
   }
   
-  /* ✅ تحسين التصميم للأجهزة الصغيرة */
+  
   @media (max-width: 768px) {
     body.dark-mode .signup-container,
     body.dark-mode .profile-container {
@@ -871,69 +871,69 @@ body.dark-mode {
     }
   }
 
-  /* 🌙 الوضع الداكن - تحسين القائمة الجانبية */
+  
 body.dark-mode .navbar {
-    background-color: #343a40; /* خلفية داكنة للشريط العلوي */
-    color: white; /* نص أبيض */
+    background-color: #343a40; 
+    color: white; 
   }
   
   body.dark-mode .hamburger-menu {
-    background-color: #444; /* خلفية داكنة لزر الهامبورغر */
-    color: white; /* نص أبيض */
+    background-color: #444; 
+    color: white; 
   }
   
   body.dark-mode .dropdown-menu {
-    background-color: #2c2f33; /* خلفية داكنة للقائمة المنسدلة */
+    background-color: #2c2f33; 
   }
   
   body.dark-mode .dropdown-menu a {
-    color: white; /* نص أبيض داخل الروابط */
+    color: white; 
   }
   
   body.dark-mode .dropdown-menu a:hover {
-    background-color: #007bff; /* تغيير الخلفية عند التمرير */
+    background-color: #007bff; 
     color: white;
   }
   
-  /* زر التبديل بين الوضعين */
+  
   body.dark-mode .dark-mode-toggle {
-    background-color: #ff6600; /* اللون البرتقالي */
+    background-color: #ff6600; 
     color: white;
   }
   
   body.dark-mode .dark-mode-toggle:hover {
-    background-color: #e64a19; /* تغيير اللون عند التمرير */
+    background-color: #e64a19; 
   }
   
-  /* تحسين الأزرار في الوضع الداكن */
+  
   body.dark-mode .btn-link,
   body.dark-mode .signup-btn,
   body.dark-mode .signin-btn,
   body.dark-mode .signout-btn {
-    color: white; /* تغيير النص إلى الأبيض */
-    background-color: #444; /* تغيير الخلفية إلى اللون الداكن */
+    color: white; 
+    background-color: #444; 
   }
   
   body.dark-mode .btn-link:hover,
   body.dark-mode .signup-btn:hover,
   body.dark-mode .signin-btn:hover,
   body.dark-mode .signout-btn:hover {
-    background-color: #ff6600; /* تغيير اللون عند التمرير */
+    background-color: #ff6600; 
     color: white;
   }
   
-  /* تحسين الألوان في الوضع الداكن */
+  
   body.dark-mode .logo {
-    color: white; /* تغيير لون الشعار */
+    color: white; 
   }
   
   body.dark-mode .logo:hover {
-    opacity: 0.8; /* تقليل الشفافية عند التمرير */
+    opacity: 0.8; 
   }
   
-  /* تحسين الألوان في سلة التسوق */
+  
   body.dark-mode .cart-icon {
-    color: #ff6600; /* تغيير لون أيقونة السلة */
+    color: #ff6600; 
   }
   
   body.dark-mode .cart-icon:hover {
@@ -941,102 +941,102 @@ body.dark-mode .navbar {
     color: white;
   }
 
-  /* إضافة مسافة بين العناصر في الشبكة (مثلاً بين البطاقات أو الصور) */
+  
 .product-container {
     margin-bottom: 40px;
   }
   
   .product-card {
     margin-bottom: 30px; 
-    margin-top: 40px;/* تغيير المسافة بين البطاقة والبطاقات الأخرى أسفلها */
+    margin-top: 40px;
   }
   
-  /* أو يمكن إضافة مسافة أعلى وأسفل الصور لزيادة التباعد بينها */
+  
   .product-card img {
-    margin-top: 20px; /* زيادة المسافة العلوية */
-    margin-bottom: 20px; /* زيادة المسافة السفلية */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
   }
   
-  /* يمكن أن يتم تعديل المسافة بين البطاقات نفسها */
+  
   .products-grid {
-    gap: 30px; /* زيادة المسافة بين البطاقات داخل الشبكة */
+    gap: 30px; 
   }
 
   .stats-section {
-    background-color: #fff; /* تأكد من أن الخلفية بيضاء أو أي لون ترغب فيه */
-    opacity: 1; /* التأكد من أن الشفافية غير موجودة */
+    background-color: #fff; 
+    opacity: 1; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-    border: 1px solid #ddd; /* إضافة حدود بسيطة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd; 
   }
   
   .stats-section p {
-    color: #333; /* لون داكن للنص */
+    color: #333; 
   }
 
-  /* قسم إحصائيات الحساب */
+  
 .stats-section {
     margin-top: 30px;
-    background: #2e2e2e; /* تغيير اللون إلى رمادي داكن */
-    padding: 20px; /* زيادة الحشوة لتوفير مساحة حول النصوص */
+    background: #2e2e2e; 
+    padding: 20px; 
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لإعطاء عمق */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
-  /* عنوان الإحصائيات */
+  
   .stats-section h3 {
     margin-bottom: 20px;
-    color: #ffffff; /* جعل العنوان أبيض ليتباين مع الخلفية الداكنة */
-    font-size: 1.5rem; /* زيادة حجم الخط ليكون أكثر وضوحًا */
+    color: #ffffff; 
+    font-size: 1.5rem; 
   }
   
-  /* نص الإحصائيات */
+  
   .stats-section p {
     font-size: 1rem;
-    color: #fff; /* تغيير لون النص إلى الأبيض */
-    margin-bottom: 10px; /* إضافة مسافة بين الفقرات */
+    color: #fff; 
+    margin-bottom: 10px; 
     font-weight: normal;
   }
 
-  /* المحتوى الرئيسي */
+  
 .admin-main {
-    margin-left: 250px; /* تعديل المسافة لتجنب الشريط الجانبي */
+    margin-left: 250px; 
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
-    background-color: #fff; /* سيتم تغييره في وضع الليل */
+    background-color: #fff; 
     width: 70%;
   }
   
-  /* الوضع الليلي للمحتوى الرئيسي */
+  
   body.dark-mode .admin-main {
-    background-color: #2c2f38; /* خلفية داكنة */
-    color: #fff; /* النص يكون أبيض */
+    background-color: #2c2f38; 
+    color: #fff; 
   }
   
   .admin-main h1 {
     font-size: 28px;
     margin-bottom: 30px;
-    color: #333; /* سيتم تغييره في وضع الليل */
+    color: #333; 
   }
   
-  /* الوضع الليلي للعناوين */
+  
   body.dark-mode .admin-main h1 {
-    color: #fff; /* تغيير اللون للنص الأبيض */
+    color: #fff; 
   }
   
-  /* أسطوانات الإحصائيات */
+  
   .admin-stats {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
   }
   
-  /* الوضع الليلي للأسطوانات */
+  
   body.dark-mode .stat-box {
-    background-color: #444; /* خلفية داكنة للأسطوانات */
-    color: white; /* النص أبيض */
+    background-color: #444; 
+    color: white; 
   }
   
   .stat-box h3 {
@@ -1049,22 +1049,22 @@ body.dark-mode .navbar {
     font-weight: bold;
   }
   
-  /* الأقسام الرئيسية */
+  
   .admin-sections {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
   
-  /* القسم في الوضع الليلي */
+  
   body.dark-mode .section-box {
-    background-color: #333; /* خلفية داكنة */
-    color: #fff; /* النص أبيض */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تحسين الظل */
+    background-color: #333; 
+    color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   .section-box {
-    background-color: #f8f9fa; /* خلفية الفاتحة العادية */
+    background-color: #f8f9fa; 
     border-radius: 8px;
     padding: 20px;
     width: 48%;
@@ -1091,101 +1091,101 @@ body.dark-mode .navbar {
     text-decoration: none;
   }
   
-  /* الوضع الليلي على الروابط */
+  
   body.dark-mode .section-box a {
-    color: #66ccff; /* لون رابط أزرق فاتح في الوضع الليلي */
+    color: #66ccff; 
   }
   
-  /* التأثير عند التمرير على الروابط */
+  
   .section-box a:hover {
     text-decoration: underline;
   }
   
-  /* الوضع الليلي للأقسام */
+  
   body.dark-mode .admin-sidebar {
-    background-color: #2c2f38; /* خلفية داكنة للشريط الجانبي */
+    background-color: #2c2f38; 
   }
   
   body.dark-mode .admin-sidebar a {
-    color: #fff; /* النص الأبيض في الشريط الجانبي */
-    background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة للروابط */
+    color: #fff; 
+    background-color: rgba(255, 255, 255, 0.1); 
   }
   
   body.dark-mode .admin-sidebar a:hover {
-    background-color: rgba(0, 123, 255, 0.2); /* تأثير التمرير */
+    background-color: rgba(0, 123, 255, 0.2); 
     color: #007bff;
   }
 
   body.dark-mode .settings-section {
-    background-color: #333; /* خلفية داكنة للإعدادات */
-    color: #fff; /* النصوص بيضاء */
+    background-color: #333; 
+    color: #fff; 
   }
   
   body.dark-mode .settings-item input,
   body.dark-mode .settings-item select {
-    background-color: #444; /* خلفية الحقول في الوضع الليلي */
-    color: #fff; /* النصوص داخل الحقول بيضاء */
-    border: 1px solid #555; /* حواف داكنة */
+    background-color: #444; 
+    color: #fff; 
+    border: 1px solid #555; 
   }
   
   body.dark-mode .settings-item input:focus,
   body.dark-mode .settings-item select:focus {
-    border-color: #007bff; /* تغيير لون الحواف عند التمرير */
+    border-color: #007bff; 
   }
   
   body.dark-mode .btnall {
-    background-color: #28a745; /* خلفية زر الحفظ */
-    color: #fff; /* النص داخل الزر أبيض */
+    background-color: #28a745; 
+    color: #fff; 
   }
   
   body.dark-mode .btnall:hover {
-    background-color: #218838; /* لون الزر عند التمرير */
+    background-color: #218838; 
   }
   
   body.dark-mode .settings-section h2 {
-    color: #fff; /* النصوص باللون الأبيض */
+    color: #fff; 
   }
   
   body.dark-mode .settings-item label {
-    color: #ccc; /* لون النصوص في الحقول يكون داكن قليلًا */
+    color: #ccc; 
   }
   
   body.dark-mode .settings-section button {
-    background-color: #dc3545; /* زر استعادة الإعدادات باللون الأحمر */
+    background-color: #dc3545; 
     color: #fff;
   }
   
-  /* الخلفية الداكنة للأزرار عند التمرير */
+  
   body.dark-mode .settings-section button:hover {
     background-color: #c82333;
   }
   
-  /* تغيير الأيقونات في الوضع الليلي */
+  
   body.dark-mode .settings-section svg {
-    color: #007bff; /* تغيير الأيقونات للون أزرق فاتح */
+    color: #007bff; 
   }
   
   body.dark-mode .section-box {
-    background-color: #333; /* خلفية داكنة للأقسام */
-    color: #fff; /* النصوص بيضاء */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تحسين الظلال */
+    background-color: #333; 
+    color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   body.dark-mode .section-box h3 {
-    color: #fff; /* النصوص بيضاء */
+    color: #fff; 
   }
   
-  /* تغيير ألوان الروابط في الوضع الليلي */
+  
   body.dark-mode .section-box a {
-    color: #66ccff; /* روابط زرقاء فاتحة */
+    color: #66ccff; 
   }
   
   body.dark-mode .section-box a:hover {
-    color: #007bff; /* تأثير عند التمرير */
+    color: #007bff; 
   }
   
   body.dark-mode #btnall {
-    background-color: #26ff00; /* تأثير عند التمرير */
+    background-color: #26ff00; 
   }
   
 

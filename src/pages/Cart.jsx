@@ -10,7 +10,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const handleClearCart = () => {
-    if (window.confirm("⚠️ هل تريد إفراغ السلة بالكامل؟")) {
+    if (window.confirm("⚠️ Are you sure you want to clear the entire cart?")) {
       dispatch(clearCart());
     }
   };
@@ -22,7 +22,7 @@ const Cart = () => {
   }));
 
   const handleRemove = (id) => {
-    if (window.confirm("❌ هل أنت متأكد من حذف هذا المنتج؟")) {
+    if (window.confirm("❌ Are you sure you want to remove this item?")) {
       dispatch(removeFromCart(id));
     }
   };
@@ -35,10 +35,10 @@ const Cart = () => {
 
   return (
     <div className="cart-container">
-      <h1>🛒 سلة التسوق</h1>
+      <h1>🛒 Shopping Cart</h1>
 
       {updatedCartItems.length === 0 ? (
-        <p className="empty-cart">🚫 لا توجد منتجات في السلة حاليًا</p>
+        <p className="empty-cart">🚫 Your cart is currently empty</p>
       ) : (
         <>
           <div className="cart-items-grid">
@@ -50,10 +50,10 @@ const Cart = () => {
                 </div>
 
                 <div className="cart-details">
-                  <p className="product-name">{item.name || "منتج مخصص"}</p>
-                  <p><strong>المقاس:</strong> {item.size || "غير محدد"}</p>
-                  <p><strong>نوع القماش:</strong> {item.fabric || "غير محدد"}</p>
-                  <p><strong>اللون:</strong> <span style={{ color: item.color }}>{item.color}</span></p>
+                  <p className="product-name">{item.name || "Custom Product"}</p>
+                  <p><strong>Size:</strong> {item.size || "Not specified"}</p>
+                  <p><strong>Fabric:</strong> {item.fabric || "Not specified"}</p>
+                  <p><strong>Color:</strong> <span style={{ color: item.color }}>{item.color}</span></p>
 
                   <div className="quantity-controls">
                     <button onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>-</button>
@@ -62,12 +62,12 @@ const Cart = () => {
                   </div>
 
                   <p className="subtotal">
-                    <strong>السعر:</strong> ${item.price * item.quantity}
+                    <strong>Price:</strong> ${item.price * item.quantity}
                   </p>
                 </div>
 
                 <button onClick={() => handleRemove(item.id)} className="delete-btn">
-                  ❌ حذف
+                  ❌ Remove
                 </button>
               </div>
             ))}
@@ -75,12 +75,12 @@ const Cart = () => {
 
           <div className="cart-total">
             <button onClick={handleClearCart} className="clear-cart-btn">
-              🧹 إفراغ السلة
+              🧹 Clear Cart
             </button>
           </div>
 
           <button onClick={() => navigate("/checkout")} className="checkout-btn">
-            ✅ إتمام الطلب
+            ✅ Proceed to Checkout
           </button>
         </>
       )}

@@ -3,7 +3,7 @@ import { auth } from "../firebaseConfig";
 import { updateProfile } from "firebase/auth";
 import "../styles/userProfile.css";
 
-// Default image URL for the user profile
+
 const defaultImage =
   "https://png.pngtree.com/png-vector/20190702/ourmid/pngtree-avatar-icon-in-trendy-style-isolated-background-png-image_1535024.jpg";
 
@@ -54,7 +54,7 @@ const UserProfile = () => {
 
         await auth.currentUser.updatePassword(password);
         setAlert({ message: "Password updated successfully!", type: "success" });
-        setPassword(""); // Clear the password input
+        setPassword(""); 
       } catch (error) {
         setAlert({ message: error.message, type: "error" });
       }

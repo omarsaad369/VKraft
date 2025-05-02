@@ -1,4 +1,4 @@
-/* تصميم احترافي لصفحة تتبع الطلبات */
+
 
 .customer-order-tracking-container {
   max-width: 1000px;
@@ -54,14 +54,14 @@
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.95rem;
-  width: 160px; /* 👈 عرض ثابت لكل الحالات */
+  width: 160px; 
   min-height: 40px;
   margin: 0 auto;
   white-space: nowrap;
   text-align: center;
 }
 
-/* ألوان الحالات */
+
 .in-progress {
   background-color: #fff3cd;
   color: #856404;
@@ -82,7 +82,7 @@
   color: #383d41;
 }
 
-/* progress bar */
+
 .progress-bar {
   width: 100%;
   background-color: #e9ecef;
@@ -121,7 +121,7 @@
   }
 }
 
-/* 🌙 الوضع الليلي لصفحة تتبع الطلبات */
+
 body.dark-mode .customer-order-tracking-container {
   background-color: #1f1f1f;
   color: #f9f9f9;
@@ -150,7 +150,7 @@ body.dark-mode .tracking-table tr:hover {
   background-color: #2c2c2c;
 }
 
-/* ألوان الحالات في الوضع الليلي */
+
 body.dark-mode .status-cell.in-progress {
   background-color: #665c00;
   color: #fff3cd;
@@ -171,7 +171,7 @@ body.dark-mode .status-cell.unknown {
   color: #d6d6d6;
 }
 
-/* progress bar في الوضع الليلي */
+
 body.dark-mode .progress-bar {
   background-color: #444;
 }

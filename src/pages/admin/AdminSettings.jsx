@@ -3,7 +3,7 @@ import "../../styles/AdminSettings.css";
 import { FaUserCog, FaLock, FaBell, FaGlobe, FaSync } from "react-icons/fa";
 
 const AdminSettings = () => {
-  // حالات لإدارة البيانات
+
   const [adminName, setAdminName] = useState("Admin User");
   const [email, setEmail] = useState("admin@example.com");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ const AdminSettings = () => {
       <main className="admin-main">
         <h1>⚙️ Admin Settings</h1>
 
-        {/* إعدادات الحساب */}
+        {}
         <div className="settings-section">
           <h2><FaUserCog /> Account Settings</h2>
           <div className="settings-item">
@@ -32,7 +32,7 @@ const AdminSettings = () => {
           </div>
         </div>
 
-        {/* تغيير كلمة المرور */}
+        {}
         <div className="settings-section">
           <h2><FaLock /> Security Settings</h2>
           <div className="settings-item">
@@ -45,7 +45,7 @@ const AdminSettings = () => {
           </div>
         </div>
 
-        {/* إعدادات الإشعارات */}
+        {}
         <div className="settings-section">
           <h2><FaBell /> Notification Settings</h2>
           <div className="settings-item">
@@ -54,7 +54,7 @@ const AdminSettings = () => {
           </div>
         </div>
 
-        {/* إعدادات اللغة */}
+        {}
         <div className="settings-section">
           <h2><FaGlobe /> Language & Timezone</h2>
           <div className="settings-item">
@@ -67,7 +67,7 @@ const AdminSettings = () => {
           </div>
         </div>
 
-        {/* زر استعادة الإعدادات الافتراضية */}
+        {}
         <div className="settings-section">
           <h2><FaSync /> Reset Settings</h2>
           <button className="btnall" onClick={() => alert("⚠️ Settings Reset to Default!")}>
@@ -75,7 +75,7 @@ const AdminSettings = () => {
           </button>
         </div>
 
-        {/* زر الحفظ */}
+        {}
         <button id="btnall" onClick={handleSave}>
           Save Settings
         </button>

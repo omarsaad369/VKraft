@@ -17,7 +17,7 @@ function UploadedImages() {
         }));
         setImages(imageList);
       } catch (err) {
-        console.error("فشل في جلب الصور:", err);
+        console.error("Failed to fetch images:", err);
       } finally {
         setLoading(false);
       }
@@ -27,13 +27,19 @@ function UploadedImages() {
   }, []);
 
   return (
-    <div className="page" style={{ padding: '20px', direction: 'rtl' }}>
-      <h2>🖼️ معرض الصور المرفوعة</h2>
-      {loading ? <p>⏳ جاري التحميل...</p> : (
+    <div className="page" style={{ padding: '20px', direction: 'ltr' }}>
+      <h2>🖼️ Uploaded Images Gallery</h2>
+      {loading ? (
+        <p>⏳ Loading images...</p>
+      ) : (
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
           {images.map((img) => (
             <div key={img.id}>
-              <img src={img.imageUrl} alt="Uploaded" style={{ width: '200px', borderRadius: '8px' }} />
+              <img
+                src={img.imageUrl}
+                alt="Uploaded"
+                style={{ width: '200px', borderRadius: '8px' }}
+              />
             </div>
           ))}
         </div>

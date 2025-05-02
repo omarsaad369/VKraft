@@ -1,4 +1,4 @@
-/* 🌟 تنسيق حاوية إتمام الطلب */
+
 .checkout-container {
     max-width: 900px;
     margin: 40px auto;
@@ -9,7 +9,7 @@
     text-align: center;
   }
   
-  /* 🛍️ عنوان الصفحة */
+  
   .checkout-container h1 {
     color: #333;
     font-size: 26px;
@@ -25,7 +25,7 @@
     height: 30px;
   }
   
-  /* 📌 نموذج إدخال بيانات الشحن */
+  
   .shipping-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,7 +48,7 @@
     border-radius: 5px;
   }
   
-  /* 🛒 تنسيق المنتجات داخل إتمام الطلب */
+  
   .checkout-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -57,7 +57,7 @@
     padding: 20px;
   }
   
-  /* 🎨 تصميم كل منتج */
+  
   .checkout-item {
     background: #ffffff;
     padding: 12px;
@@ -84,7 +84,7 @@
     max-height: 100%;
   }
   
-  /* 💰 تنسيق السعر والإجمالي */
+  
   .checkout-summary {
     margin-top: 20px;
     font-size: 20px;
@@ -92,7 +92,7 @@
     color: #28a745;
   }
   
-  /* ✅ زر "تأكيد الطلب" */
+  
   .confirm-order-btn {
     background: #28a745;
     color: white;
@@ -112,7 +112,7 @@
     background: #218838;
   }
   
-  /* ✅ تحسين الاستجابة للجوال */
+  
   @media (max-width: 768px) {
     .checkout-container {
       padding: 15px;
