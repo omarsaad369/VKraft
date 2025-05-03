@@ -6,7 +6,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import "../styles/navbar.css";
 import "../styles/DarkMode.css";
 import NotificationsBell from '../components/NotificationsBell.jsx';
-import logo from '../assets/icons/LOGOO.png';
+import logo from '../assets/icons/image-removebg-preview (1).png';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
