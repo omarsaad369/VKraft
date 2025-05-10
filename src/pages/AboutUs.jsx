@@ -120,17 +120,18 @@ const AboutUs = () => {
     <p>Product Designer</p>
   </div>
 
-  <div className="team-member">
-    <img src="src/assets/images/images (2).jpeg" alt="Asmaa" />
-    <h4>Asmaa Ibrahim</h4>
-    <p>Assistant Team Leader</p>
-  </div>
+  <div className="team-member assistant-leader">
+  <div className="badge">⭐ Assistant Leader</div>
+  <img src="src/assets/images/image-removebg-preview (2)12.png" alt="Omar" />
+  <h4>Omar Saad</h4>
+  <p>Assistant Team Leader</p>
+</div>
 
   <div className="team-member leader">
     <div className="crown">👑</div>
     <div className="badge">⭐ Leader</div>
-    <img src="src/assets/images/465653614_2336094590059756_6436360577971108406_n.jpg" alt="Omar" />
-    <h4>Omar Saad</h4>
+    <img src="src/assets/images/images (2).jpeg" alt="Asmaa" />
+    <h4>Asmaa Ibrahim</h4>
     <p>Founder & Team Leader</p>
   </div>
 
