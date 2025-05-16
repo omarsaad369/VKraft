@@ -1,137 +1,122 @@
-
 .footer {
-    background-color: #eceff1; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    width: 100%; 
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box; 
+  background-color: #6a32aa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white; /* اجعل النص داخل الفوتر أبيض افتراضياً */
 }
-  
 
 .social-media {
-    background-color: #21d192; 
-    padding: 20px 0; 
-    display: flex; 
-    justify-content: space-between; 
-    color: white; 
-    width: 100%; 
+  background-color: #ff6600;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
 }
-  
 
 .social-icons a {
-    color: white; 
-    margin-right: 15px; 
-    font-size: 20px; 
-    transition: color 0.3s ease; 
+  color: white;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-  
 
 .social-icons a:hover {
-    color: #ffeb3b; 
+  color: #ffeb3b;
+  transform: scale(1.2);
 }
-  
 
 .links-section {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    padding: 20px; 
-    width: 100%; 
-}
-  
-
-.links-section .col {
-    flex: 1; 
-    margin: 10px; 
-    text-align: left;
-}
-.colCompany{
-    text-align: left;
-}
-.colProducts{
-    text-align: left;
-
-}
-.colUseful{
-    text-align: left;
-
-}
-.colContact{
-    text-align: left;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  color: white;
 }
 
+.links-section .col,
+.colCompany,
+.colProducts,
+.colUseful,
+.colContact {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
+  color: white;
+}
 
 h6 {
-    font-weight: bold; 
-    color: #333; 
+  font-weight: bold;
+  color: white;
 }
-  
 
 hr {
-    width: 100%; 
-    background-color: #ff0088; 
-    height: 2px; 
-    margin: 10px 0; 
+  width: 100%;
+  background-color: #ff0088;
+  height: 2px;
+  margin: 10px 0;
 }
-  
 
 a {
-    text-decoration: none; 
-    color: #333; 
+  text-decoration: none;
+  color: white;
 }
-  
 
 a:hover {
-    color: #ffeb3b; 
+  color: #ffeb3b;
 }
-  
 
 .text-dark {
-    color: #333 !important; 
+  color: white !important;
 }
-  
 
-.text-center {
-    text-align: left; 
-}
-  
-
+.text-center,
 .text-md-start {
-    text-align: left; 
+  text-align: left;
 }
-  
 
 .text-uppercase {
-    text-transform: uppercase; 
+  text-transform: uppercase;
 }
-  
 
 .footer p {
-    font-size: 14px; 
-    color: #6c757d; 
+  font-size: 14px;
+  color: white;
 }
-  
 
 .footer .footer-links a {
-    font-size: 16px; 
-    margin: 5px 0; 
+  font-size: 16px;
+  margin: 5px 0;
+  color: white;
 }
-  
 
 .footer .footer-rights {
-    background-color: rgba(0, 0, 0, 0.2); 
-    text-align: center; 
-    padding: 10px; 
-    color: #333; 
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  color: white;
 }
-  
 
 .footer .footer-rights a {
-    color: #333; 
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .links-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links-section .col {
+    margin-bottom: 20px;
+  }
 }
 
 
