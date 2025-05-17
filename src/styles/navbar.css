@@ -108,7 +108,7 @@ body {
 }
 
 .search-results li:hover {
-  background-color: #ff6600;
+  background-color: #6a32aa;
   color: white;
 }
 
@@ -130,7 +130,7 @@ body {
 
 .btn-link {
   background: white;
-  color: #ff6600;
+  color: #6a32aa;
   font-weight: bold;
   border: none;
   font-size: 16px;
@@ -141,7 +141,7 @@ body {
 }
 
 .btn-link:hover {
-  background: #ff5722;
+  background: #6a32aa;
   color: white;
 }
 
@@ -161,7 +161,7 @@ body {
   border: none;
   border-radius: 8px;
   background: white;
-  color: #ff5722;
+  color: #6a32aa;
   font-size: 14px;
   font-weight: bold;
   transition: background 0.3s ease, color 0.3s ease;
@@ -169,7 +169,7 @@ body {
 }
 
 .signin-btn:hover {
-  background: #ff6600;
+  background: #6a32aa;
   color: white;
 }
 
@@ -206,7 +206,7 @@ body {
   justify-content: center;
   padding: 8px;
   background: white;
-  color: #ff6600; 
+  color: #6a32aa; 
   border-radius: 50%;
   font-size: 20px;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -214,7 +214,7 @@ body {
 }
 
 .cart-icon:hover {
-  background: #ff5722;
+  background: #6a32aa;
   color: white;
   border: 2px solid white;
 }
@@ -375,7 +375,7 @@ body {
 
 
 .admin-btn {
-  background-color: #ff9f00;
+  background-color: #6a32aa;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -420,7 +420,7 @@ body {
 
 
 .hamburger-menu:hover {
-  background: #ff5722;
+  background: #6a32aa;
   color: white;
   transform: scale(1.05);
   border-color: white;
@@ -442,7 +442,7 @@ body {
   cursor: pointer;
   padding: 8px 12px;
   background: white;
-  color: #ff6600;
+  color: #6a32aa;
   border-radius: 8px;
   transition: background 0.3s ease, color 0.3s ease;
   position: relative;
@@ -497,7 +497,7 @@ body {
 }
 
 .dropdown-menu li:hover {
-  background-color: #ff6600; 
+  background-color: #6a32aa; 
   color: white; 
 }
 

@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #ff5722;
+    background: #E3C98F;
     color: white;
     border: none;
     padding: 10px;
@@ -16,6 +16,6 @@
   }
   
   .scroll-to-top:hover {
-    background: #e64a19;
+    background: #f8b117;
   }
   

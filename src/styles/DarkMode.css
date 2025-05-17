@@ -43,14 +43,14 @@ body.dark-mode {
   
   
   .signout-btn, .btn-link, .signin-btn, .signup-btn {
-    background: #ff6600;
+    background: #E3C98F;
     color: white;
     border: none;
     font-size: 16px;
   }
   
   .signout-btn:hover, .btn-link:hover, .signin-btn:hover, .signup-btn:hover {
-    background: #ff4500; 
+    background: #d69d22; 
   }
   
   
