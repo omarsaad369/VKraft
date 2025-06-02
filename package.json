@@ -2,6 +2,7 @@
   "name": "vkraft",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vkraft.fwh.is",
   "type": "module",
   "scripts": {
     "dev": "vite",
